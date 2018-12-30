@@ -20,6 +20,7 @@
   letter-spacing:16px;
   font-size: 42px;
   margin-top:0%;
+  padding-left: 1%;
 }
 #top-img{
   width: 100%;
@@ -29,27 +30,27 @@
 @media screen and (min-width: 600px) and (max-width: 900px) {
     #start, #des-top {
       font-size: 28px;
-      letter-spacing:10px;
+      letter-spacing:5px;
     }
     #bio{
       font-size: 14px;
     }
     #sub_head{
-      font-size: 20px;
-      letter-spacing:8px;
+      font-size: 16px;
+      letter-spacing:5px;
     }
   }
 @media screen and (max-width: 600px) {
     #start, #des-top {
       font-size: 28px;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
     }
     #bio{
       font-size: 14px;
     }
     #sub_head{
-      font-size: 18px;
-      letter-spacing:6px;
+      font-size: 16px;
+      letter-spacing:5px;
     }
 
   }
