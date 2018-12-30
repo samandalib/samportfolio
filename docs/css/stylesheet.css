@@ -1,12 +1,21 @@
 #start{
   text-align: center;
-  letter-spacing:24px;
-  font-size: 64px;
-  color:red;
+  letter-spacing:22px;
+  font-size: 60px;
+  margin-top:15%;
 }
-@media screen and (max-width: 600px) {
+#bio{
+  text-align: justify;
+  font-size:18px;
+  margin-right:3%;
+}
+
+@media screen and (max-width: 800px) {
     div#start{
-      font-size: 12px;
-      color: red;
+      font-size: 28px;
+      letter-spacing: 12px;
+    }
+    #bio{
+      font-size: 14px;
     }
   }
