@@ -4,10 +4,15 @@ $my_white: #FFFFFF;
 $my_font:Helvetica;
 $drk_gray: #454545;
 
-div#start{
+#start{
   color:$my_black;
   font-family: $my_font;
 }
 .strong{
   color: $drk_gray;
+}
+
+#sub_head{
+  color: $my_white;
+  background-color: $my_gray;
 }

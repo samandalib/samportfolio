@@ -1,8 +1,12 @@
-div#start {
+#start {
   color: #222429;
   font-family: Helvetica; }
 
 .strong {
   color: #454545; }
+
+#sub_head {
+  color: #FFFFFF;
+  background-color: #979798; }
 
 /*# sourceMappingURL=variables.css.map */

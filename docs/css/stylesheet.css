@@ -10,12 +10,46 @@
   margin-right:3%;
 }
 
-@media screen and (max-width: 800px) {
-    div#start{
+#des-top{
+  text-align: center;
+  letter-spacing:22px;
+  font-size: 60px;
+}
+#sub_head{
+  text-align: left;
+  letter-spacing:16px;
+  font-size: 42px;
+  margin-top:0%;
+}
+#top-img{
+  width: 100%;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #start, #des-top {
       font-size: 28px;
-      letter-spacing: 12px;
+      letter-spacing:10px;
     }
     #bio{
       font-size: 14px;
     }
+    #sub_head{
+      font-size: 20px;
+      letter-spacing:8px;
+    }
+  }
+@media screen and (max-width: 600px) {
+    #start, #des-top {
+      font-size: 28px;
+      letter-spacing: 10px;
+    }
+    #bio{
+      font-size: 14px;
+    }
+    #sub_head{
+      font-size: 18px;
+      letter-spacing:6px;
+    }
+
   }
