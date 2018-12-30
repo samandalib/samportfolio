@@ -1,0 +1,12 @@
+#start{
+  text-align: center;
+  letter-spacing:24px;
+  font-size: 64px;
+  color:red;
+}
+@media screen and (max-width: 600px) {
+    div#start{
+      font-size: 12px;
+      color: red;
+    }
+  }
