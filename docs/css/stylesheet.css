@@ -16,14 +16,13 @@
   font-size: 60px;
 }
 #sub_head{
-  text-align: left;
-  letter-spacing:16px;
+  text-align: center;
+  letter-spacing:20px;
+  font-weight: lighter;
   font-size: 42px;
-  margin-top:0%;
+  margin-top:5%;
+  margin-bottom:5%;
   padding-left: 1%;
-}
-#top-img{
-  width: 100%;
 }
 
 
