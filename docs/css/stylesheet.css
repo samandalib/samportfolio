@@ -118,6 +118,9 @@
 
 .description1{
   text-align: justify;
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
   font-size:18px;
   margin-right:3%;
   margin-top:25%;
