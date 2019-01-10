@@ -9,55 +9,48 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
 
+    <!-- Customized CSS and JS -->
     <link rel="stylesheet" href='css/stylesheet.css'>
+    <link rel="stylesheet" href='css/preload.css'>
+    <link rel="stylesheet" href='css/projects.css'>
     <link rel="stylesheet" href='css/variables.css'>
+    <script  src="js/preloader.js"></script>
+    <script  src="js/navbar.js"></script>
 
     <title>
-
+      Projects
     </title>
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="grid">
 
-          <div class="row">
-            <div class= "col-lg-3">
-              <div href="index.html" id ="des-top"> HESAM<strong>ANDALIB</strong> </div>
-            </div>
-<!--
-            <div class="topnav" >
-              <a href="#home" class="active">Home</a>
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
--->
 
-            <div class= "col-lg-6">
-              <ul class="nav nav-pills nav-fill" id="myTopnav">
-                <li class="nav-item">
-                  <a class="nav-link" href="bio.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a style="color:gray; pointer-events: none; font-weight:bold;" class="nav-link" href="design.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="other.html">Other</a>
-                </li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </ul>
-            </div>
-            <div class= "col-lg-3">
-            </div>
-          </div>
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
 
-        </div>
+    <div class="se-pre-con"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed; background-color:#ffffff;top: 0; left: 0; z-index: 9999; width: 100%;">
+      <a class="navbar-brand" href="index.html" id ="des-top"> HESAM<strong>ANDALIB</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="bio.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="projects.html">Projects<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="other.html" >Other</a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
       <div class="container">
 
