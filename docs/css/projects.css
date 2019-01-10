@@ -48,6 +48,14 @@
 
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
+  .p1-1{
+    display:flex;
+    width: 100%;
+    margin-top: 40%;
+    margin-bottom: 12.5%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
   .p1-3{
     display: block;
     width: 100%;
@@ -84,6 +92,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .p1-1{
+    display:flex;
+    width: 100%;
+    margin-top: 40%;
+    margin-bottom: 12.5%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
   .p1-3{
     display: block;
     width: 100%;

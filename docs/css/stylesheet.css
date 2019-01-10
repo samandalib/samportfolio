@@ -53,6 +53,12 @@
   width: 50%;
 }
 
+.container-footer{
+  justify-content: center;
+  margin-top: 5%;
+  background: black;
+}
+
 .container>div {
     margin-left: 10px;
     margin-right: 10px;
@@ -117,6 +123,15 @@
   margin-top: 50px;
 }
 
+.social{
+  align-content: center;
+}
+#linkedin{
+
+  width: 25px;
+  height: 25px;
+  opacity: 50%;
+}
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .fixed-nav-bar {
