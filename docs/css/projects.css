@@ -30,6 +30,14 @@
   margin-left: 0%;
   margin-right: 0%;
 }
+.p2-2{
+  display:flex;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
 .p1-4{
   display:flex;
   width: 100%;
@@ -53,7 +61,13 @@
 
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
+  .p1full{
+    margin-top: 50px;
+    display: flex;
+    width:100%;
+  }
   .p2full{
+    margin-top: 50px;
     width:100%;
     margin-left:0%;
   }
@@ -101,7 +115,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  .p1full{
+    margin-top: 50px;
+    display: flex;
+    width:100%;
+  }
   .p2full{
+    margin-top: 50px;
     width:100%;
     margin-left: 0%;
   }
