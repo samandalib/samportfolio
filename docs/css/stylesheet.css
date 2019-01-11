@@ -1,142 +1,141 @@
 
-@media screen and (min-width: 900px){
-    .navbar navbar-expand-lg navbar-light bg-light{
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      width: 100%;
-    }
-    .photographer{
-      font-size: 12px;
-      color: gray;
-      text-align: center;
-    }
-
-    #start{
-      text-align: center;
-      letter-spacing:22px;
-      font-size: 60px;
-      margin-top:25%;
-    }
-    #bio{
-      font-weight: 300;
-      font-style:normal;
-      line-height: 1.5em;
-      text-align: justify;
-      font-size:16px;
-      margin-right:3%;
-      margin-top: 0%;
-
-    }
-
-    #myphoto{
-      display: flex;
-      width: 70%;
-      margin-top: 10%;
-    }
-    #des-top{
-      text-align: left;
-      letter-spacing:normal;
-      font-size: 18px;
-      margin-top:6px;
-      margin-left: 20px;
-    }
-    #sub_head{
-      text-align: center;
-      letter-spacing:20px;
-      font-weight: lighter;
-      font-size: 42px;
-      margin-top:5%;
-      margin-bottom:5%;
-      padding-left: 1%;
-    }
-    #top-img{
-      width: 100%;
-    }
-
-    .container{
-      display:flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 25%;
-      width: 50%;
-    }
-
-
-    .container>div {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .description1{
-      text-align: justify;
-      font-weight: 300;
-      font-style:normal;
-      line-height: 1.5em;
-      font-size:18px;
-      margin-right:3%;
-      margin-top:15%;
-      margin-bottom: 12.5%;
-    }
-    .description2{
-      text-align: justify;
-      font-weight: 300;
-      font-style:normal;
-      line-height: 1.5em;
-      font-size:18px;
-      margin-right:25%;
-      margin-left:25%;
-      margin-top: 12.5%;
-      margin-bottom: 12.5%;
-    }
-
-    .description3{
-      text-align: justify;
-      font-weight: 300;
-      font-style:normal;
-      line-height: 1.5em;
-      font-size:18px;
-      margin-right:25%;
-      margin-left:25%;
-      margin-top: 25%;
-      margin-bottom: 12.5%;
-    }
-    .description4{
-      text-align: justify;
-      font-weight: 300;
-      font-style:normal;
-      line-height: 1.5em;
-      font-size:18px;
-      margin-right:10%;
-      margin-left:10%;
-      margin-top: 25%;
-      margin-bottom: 25%;
-    }
-    .icons{
-      text-align: center;
-       position: absolute; bottom: 10px; left: 0;
-       width: 100%;
-    }
-    #copyright{
-      color: gray;
-      text-align: center;
-      font-size: 12px;
-      margin-bottom: 50px;
-      margin-top: 50px;
-    }
-
-    .social{
-      align-content: center;
-    }
-    #linkedin{
-      width: 25px;
-      height: 25px;
-      opacity: 50%;
-    }
+.navbar navbar-expand-lg navbar-light bg-light{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
+.photographer{
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+
+#start{
+  text-align: center;
+  letter-spacing:22px;
+  font-size: 60px;
+  margin-top:25%;
+}
+#bio{
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
+  text-align: justify;
+  font-size:16px;
+  margin-right:3%;
+  margin-top: 0%;
+
+}
+
+#myphoto{
+  display: flex;
+  width: 70%;
+  margin-top: 10%;
+}
+#des-top{
+  text-align: left;
+  letter-spacing:normal;
+  font-size: 18px;
+  margin-top:6px;
+  margin-left: 20px;
+}
+#sub_head{
+  text-align: center;
+  letter-spacing:20px;
+  font-weight: lighter;
+  font-size: 42px;
+  margin-top:5%;
+  margin-bottom:5%;
+  padding-left: 1%;
+}
+#top-img{
+  width: 100%;
+}
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25%;
+  width: 50%;
+}
+
+
+.container>div {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description1{
+  text-align: justify;
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
+  font-size:18px;
+  margin-right:3%;
+  margin-top:15%;
+  margin-bottom: 12.5%;
+}
+.description2{
+  text-align: justify;
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
+  font-size:18px;
+  margin-right:25%;
+  margin-left:25%;
+  margin-top: 12.5%;
+  margin-bottom: 12.5%;
+}
+
+.description3{
+  text-align: justify;
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
+  font-size:18px;
+  margin-right:25%;
+  margin-left:25%;
+  margin-top: 25%;
+  margin-bottom: 12.5%;
+}
+.description4{
+  text-align: justify;
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
+  font-size:18px;
+  margin-right:10%;
+  margin-left:10%;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+.icons{
+  text-align: center;
+   position: absolute; bottom: 10px; left: 0;
+   width: 100%;
+}
+#copyright{
+  color: gray;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.social{
+  align-content: center;
+}
+#linkedin{
+  width: 25px;
+  height: 25px;
+  opacity: 50%;
+}
+
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .fixed-nav-bar {
@@ -192,6 +191,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     .description1{
       text-align: justify;
       font-weight: 300;
@@ -310,7 +310,6 @@
         margin-bottom: 5px;
       }
 
-    }
     .description1{
       text-align: justify;
       font-weight: 300;
@@ -362,7 +361,6 @@
       margin-bottom: 25px;
       margin-top: 5px;
     }
-
     .social{
       align-content: center;
     }
@@ -371,3 +369,4 @@
       height: 25px;
       opacity: 50%;
   }
+}
