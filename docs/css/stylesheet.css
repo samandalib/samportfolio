@@ -74,13 +74,13 @@
 }
 .gallery img{
   width:200px;
-  padding: 10px;
+  padding: 5px;
   filter: grayscale(100%);
-  transition: 1s;
+  transition: .5s;
 }
 .gallery img:hover{
   filter: grayscale(0);
-  transform: scale(1.2)
+  transform: scale(1.1)
 }
 
 .container>div {
@@ -107,6 +107,16 @@
   margin-right:3%;
   margin-top:15%;
   margin-bottom: 12.5%;
+}
+.picnote{
+  text-align: justify;
+  font-weight: 300;
+  font-style:normal;
+  line-height: 1.5em;
+  font-size:18px;
+  margin-right:3%;
+  margin-top:1%;
+  margin-bottom: 5%;
 }
 .description2{
   text-align: justify;
@@ -455,7 +465,7 @@
       opacity: 50%;
   }
   .gallery img{
-    width:120px;
+    width:100px;
     padding: 5px;
     filter: grayscale(100%);
     transition: 1s;

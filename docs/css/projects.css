@@ -2,6 +2,11 @@
   display: flex;
   width:100%;
 }
+.p4full{
+  display: flex;
+  width:100%;
+}
+
 .p2full{
   display: flex;
   width:85%;
@@ -66,6 +71,11 @@
     display: flex;
     width:100%;
   }
+  .p4full{
+    margin-top: 10px;
+    display: flex;
+    width:100%;
+  }
   .p2full{
     margin-top: 50px;
     width:100%;
@@ -117,6 +127,11 @@
 @media screen and (max-width: 600px) {
   .p1full{
     margin-top: 50px;
+    display: flex;
+    width:100%;
+  }
+  .p4full{
+    margin-top: 0px;
     display: flex;
     width:100%;
   }
