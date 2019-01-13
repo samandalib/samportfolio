@@ -90,6 +90,14 @@
     margin-bottom: 10px;
 }
 
+#other-sketch{
+  background-color:gray;
+  justify-content:center;
+  margin-top:1%;
+  padding-top:6%;
+  padding-bottom:6%;
+}
+
 .description1{
   text-align: justify;
   font-weight: 300;
@@ -139,6 +147,16 @@
    position: absolute; bottom: 10px; left: 0;
    width: 100%;
 }
+#prize{
+  margin-left:15%;
+  margin-top: 5%;
+}
+#winner{
+  font-weight:400;
+  font-size:20px;
+  margin-left:0%;
+  padding-top:50%;
+}
 #copyright{
   color: gray;
   text-align: center;
@@ -155,6 +173,13 @@
   height: 25px;
   opacity: 50%;
 }
+#sketch-title{
+  margin-top: 10%;
+  margin-left: 3%;
+  font-weight:300;
+  font-size:28px;
+}
+
 
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -284,7 +309,24 @@
       margin: 20px auto;
       text-align: center;
     }
-
+    .gallery img{
+      width:100px;
+      padding: 5px;
+      filter: grayscale(100%);
+      transition: 1s;
+    }
+    .gallery img:hover{
+      filter: grayscale(0);
+      transform: scale(1.5)
+    }
+    #other-sketch{
+      margin-left: 0%;
+      padding-left: 5%;
+    }
+    #sketch-title{
+      margin-top: 10%;
+      font-size:24px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -387,6 +429,16 @@
       margin-top: 10%;
       margin-bottom: 10%;
     }
+    #prize{
+      margin-left:5%;
+      margin-top: 25%;
+    }
+    #winner{
+      font-weight:400;
+      font-size:18px;
+      margin-left:0%;
+      padding-top:50%;
+    }
     #copyright{
       color: gray;
       text-align: center;
@@ -401,5 +453,23 @@
       width: 25px;
       height: 25px;
       opacity: 50%;
+  }
+  .gallery img{
+    width:120px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+  }
+  .gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.20)
+  }
+  #other-sketch{
+    margin-left: 0%;
+    padding-left: 10%;
+  }
+  #sketch-title{
+    margin-top: 15%;
+    font-size:24px;
   }
 }
