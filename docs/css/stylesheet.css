@@ -13,7 +13,9 @@
 }
 
 .project{
-  margin-top: 15%;
+  margin-top: 0%;
+  margin-left: 0%;
+
 
 }
 .project img{
@@ -91,6 +93,18 @@
   filter: grayscale(0);
   transform: scale(1.1)
 }
+
+.gallery-msr img{
+  width:24%;
+  padding: 1px;
+  filter: grayscale(75%);
+  transition: 1s;
+}
+.gallery-msr img:hover{
+  filter: grayscale(0);
+  transform: scale(1.02)
+}
+
 
 .container>div {
     margin-left: 10px;
@@ -203,6 +217,9 @@
 }
 #prize{
   margin-left:15%;
+  margin-top: 5%;
+}
+#certificate{
   margin-top: 5%;
 }
 #winner{
@@ -412,6 +429,14 @@
       filter: grayscale(0);
       transform: scale(1.5)
     }
+    .gallery-msr img{
+      width:200px;
+      padding: 5px;
+      filter: grayscale(75%);
+      transition: 1s;
+    }
+
+
     #other-sketch{
       margin-left: 0%;
       padding-left: 5%;
@@ -553,7 +578,7 @@
       font-weight: 300;
       font-style:normal;
       line-height: 1.4em;
-      font-size:14px;
+      font-size:12px;
       margin-right:0%;
       margin-left:10%;
       margin-top: 0%;
@@ -573,6 +598,11 @@
     #prize{
       margin-left:5%;
       margin-top: 25%;
+    }
+
+    #certificate{
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
     #winner{
       font-weight:400;
@@ -594,26 +624,33 @@
       width: 25px;
       height: 25px;
       opacity: 50%;
-  }
-  .gallery img{
-    width:100px;
-    padding: 5px;
-    filter: grayscale(100%);
-    transition: 1s;
-  }
-  .gallery img:hover{
-    filter: grayscale(0);
-    transform: scale(1.20)
-  }
-  #other-sketch{
-    margin-left: 0%;
-    padding-left: 1%;
-  }
-  #sketch-title{
+    }
+    .gallery img{
+      width:100px;
+      padding: 5px;
+      filter: grayscale(100%);
+      transition: 1s;
+    }
+    .gallery img:hover{
+      filter: grayscale(0);
+      transform: scale(1.20)
+    }
+
+    .gallery-msr img{
+      width:24%;
+      padding:1px;
+      filter: grayscale(75%);
+      transition: 1s;
+    }
+    #other-sketch{
+      margin-left: 0%;
+      padding-left: 1%;
+    }
+    #sketch-title{
     margin-top: 20%;
     font-size:24px;
-  }
-  .top-left {
+    }
+    .top-left {
     position: absolute;
     top: 16%;
     left: 1%;
@@ -621,8 +658,8 @@
     font-style:normal;
     line-height: 1.0em;
     font-size:10px;
-  }
-  .centered {
+    }
+    .centered {
     position: absolute;
     top: 0%;
     left: 25%;
@@ -631,9 +668,8 @@
     font-style:normal;
     line-height: 1.0em;
     font-size:14px;
-
-  }
-  .container2 {
+    }
+    .container2 {
     position: relative;
     text-align: left;
     color: black;
