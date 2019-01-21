@@ -3,6 +3,14 @@
   width:100%;
   margin-top: 4%;
 }
+
+.gifshow{
+  display: flex;
+  width:100%;
+  margin-top: 4%;
+  cursor: wait;
+}
+
 .p4full{
   display: flex;
   width:100%;
