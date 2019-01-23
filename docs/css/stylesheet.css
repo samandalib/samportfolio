@@ -105,6 +105,19 @@
   transform: scale(1.02)
 }
 
+.gallery-jhng{
+  margin:0px 0%;
+}
+.gallery-jhng img{
+  width:300px;
+  margin-bottom: 15px;
+  filter: grayscale(75%);
+  transition: .5s;
+}
+.gallery-jhng img:hover{
+  filter: grayscale(0);
+  transform: scale(1.05)
+}
 
 .container>div {
     margin-left: 10px;
@@ -436,6 +449,19 @@
       transition: 1s;
     }
 
+    .gallery-jhng{
+      margin:0px 0%;
+    }
+    .gallery-jhng img{
+      width:100%;
+      margin-bottom: 15px;
+      filter: grayscale(0%);
+    }
+    .gallery-jhng img:hover{
+      filter: grayscale(0);
+      transform: scale(1.0)
+    }
+
 
     #other-sketch{
       margin-left: 0%;
@@ -641,6 +667,19 @@
       padding:1px;
       filter: grayscale(75%);
       transition: 1s;
+    }
+
+    .gallery-jhng{
+      margin:0px 0%;
+    }
+    .gallery-jhng img{
+      width:100%;
+      margin-bottom: 15px;
+      filter: grayscale(0%);
+    }
+    .gallery-jhng img:hover{
+      filter: grayscale(0);
+      transform: scale(1.00)
     }
     #other-sketch{
       margin-left: 0%;
