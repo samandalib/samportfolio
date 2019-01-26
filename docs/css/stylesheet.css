@@ -30,7 +30,7 @@
   text-align: center;
   letter-spacing:22px;
   font-size: 60px;
-  margin-top:25%;
+  margin-top:0%;
 }
 #bio{
   font-weight: 300;
@@ -73,7 +73,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20%;
-  width: 75%;
+  width: 100%;
 }
 
 .container-gallery{
