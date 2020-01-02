@@ -19,7 +19,7 @@
 }
 
 .rounded-corner{
-  border-radius: 5rem;;
+  border-radius: 2.5rem;;
 }
 
 #homePage{
@@ -87,6 +87,14 @@ html{
 
 /*End Quote */
 
+.banner{
+  margin-bottom:2%;
+}
+
+.icon-container img:hover{
+  transform:scale(0.95);
+}
+
 #name{
   font-weight: 400;
 
@@ -100,6 +108,7 @@ html{
 #links{
   margin-top: 25%;
 }
+
 .projectDesc {
 
   color:white;
@@ -123,7 +132,7 @@ html{
 
   text-align: left;
   letter-spacing:16px;
-  font-size: 60px;
+  font-size: 106px;
   line-height: 1;
 }
 
