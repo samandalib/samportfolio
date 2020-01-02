@@ -101,7 +101,7 @@ html{
 }
 
 #lastName{
-  font-weight: 1;
+  font-weight: 100;
 
 }
 
@@ -132,26 +132,33 @@ html{
 
   text-align: left;
   letter-spacing:16px;
-  font-size: 106px;
+  font-size: 124px;
   line-height: 1;
 }
 
+.white{
+  color:white;
+  font-weight: 100;
+}
+
+#htmlEffect{
+  font-family: courier;
+}
 #finishEffect{
   white-space:nowrap;
 }
 
 #cvLink{
   font-family: 'Raleway', sans-serif;
-  color: gray;
+
 }
 
 #worksLink{
   font-family: 'Raleway', sans-serif;
-  color: gray;
 }
 
 #intro{
-  font-family: 'Raleway', sans-serif;
+  font-family:  normal, sans-serif;
   font-weight: 200;
   white-space: nowrap;
 }
