@@ -12,7 +12,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
     <!-- Customized CSS and JS -->
     <link rel="stylesheet" href='css/stylesheet.css'>
     <link rel="stylesheet" href='css/preload.css'>
@@ -60,8 +60,10 @@
       <div class="grid">
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:15%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
-                    <strong style="font-size:3em;">Virtual Reality and Historical Preservation</strong></br>
+
+            <div class= "col-lg-12 col-md-12 col-sm-6">
+                  <p  class = "description2-2">
+                    <strong class="section-title">Virtual Reality and Historical Preservation</strong></br>
                   </br>
                   Virtual reality or VR as a technology provides multiple affordances over any other accessible medium
                   in the history of human civilization. Human beings exist and interact with the world in three dimensions,
@@ -74,16 +76,18 @@
                    itself as a technology and its capability to affect and change people’s lives for the better.
                    Towards this end, we came up with this Project.
                   </p>
+            </div>
         </div>
 
         <div class="row">
-            <img class='p1full'  style="margin-top:0%;" src='images/tech2/1.jpg'  alt="photo">
-
+          <div class= "col-lg-12">
+            <img class='p1full-2'  src='images/tech2/1.jpg'  alt="photo">
+          </div>
         </div>
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
-                    <strong style="font-size:2em;">Process</strong></br>
+                  <p  class = "description2-2" >
+                    <strong class="section-title">Process</strong></br>
                   </br>
                   For this project, we used <strong>Unity Game Engine</strong> software running on a computer and an Oculus Rift HMD. Using Unity, we created
                   a virtual environment of a restaurant. For the experience, the user would be wearing an HMD, and using hand-held tracking
@@ -119,7 +123,7 @@
         </div>
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
+                  <p  class = "description2-2">
                   </br>
                   As the player is standing next to the restroom in the back corner, the player will be instructed to turn towards the
                   payphone near the restroom (in the back corner). As the player looks at the payphone, it will begin ringing
@@ -152,7 +156,7 @@
         </div>
 
         <div class="row">
-              <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
+              <p  class = "description2-2">
               As the player moves through this “hallway,” (automatically, the player will not need to physically move), the same restaurant
               exterior can be seen in the distance, moving towards the player. There are some marked changes, however. While the model of
               the restaurant is the same as what was seen in the first environment, there is no parking lot. Instead of clear windows along
@@ -182,8 +186,8 @@
         </div>
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
-                    <strong style="font-size:2em;">Components</strong></br>
+                  <p  class = "description2-2">
+                    <strong class="section-title">Components</strong></br>
                   </br>
                   For this project, we used some ready assets from Unity Asset Store, including the modern restaurant space, the old furniture and
                   characters. The codes for this projects were hard coded in C# by us based on the triggers and functions we needed. All the codes are accessible
@@ -204,7 +208,7 @@
 
                     </code>
                   </pre>
-                  <p class="description2" style="margin-top:0%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
+                  <p class="description2-2">
 
                   The <code>IEnumerator</code> function enables us to set some events happen based on a specific timing. For example, in the case of
                   activating transformation planes, a set of sounds, animations, and visual events must happen in an arranged schedule:</br>
@@ -252,8 +256,8 @@
         </div>
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
-                    <strong style="font-size:2em;">Measuring the Experience</strong></br>
+                  <p  class = "description2-2">
+                    <strong class="section-title">Measuring the Experience</strong></br>
                   </br>
                   One way we will measure the users’ experience is by doing a questionnaire before and after the virtual experience. Before
                   the user experiences the virtual environment, they will fill out a brief questionnaire that asks them how much they know
@@ -277,25 +281,25 @@
         </div>
 
         <div class="row">
-          <div style="padding:0;" class= "col-lg-6 col-md-6 col-sm-12">
+            <div style="padding:0;" class= "col-lg-6 col-md-6 col-sm-12">
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LLPpI_6yAWA" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-          </div>
-
-          <div style="padding:0;" class= "col-lg-6 col-md-6 col-sm-12">
-
-              <iframe   width="560" height="315" src="https://www.youtube.com/embed/dfUOYN7FLO8" frameborder="0"
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/LLPpI_6yAWA" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
-          </div>
+            </div>
+
+            <div style="padding:0;" class= "col-lg-6 col-md-6 col-sm-12">
+
+                <iframe   width="560" height="315" src="https://www.youtube.com/embed/dfUOYN7FLO8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
 
         </div>
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
-                    <strong style="font-size:2em;">Discussion</strong></br>
+                  <p  class = "description2-2">
+                    <strong class="section-title">Discussion</strong></br>
                   </br>
                   The main reason we wanted to create this virtual environment was for educational purposes. When designing our virtual
                   experience, we thought about how we wanted to make history subjects more interesting for elementary, middle school and
@@ -321,26 +325,18 @@
                     on the labels (a la Alice in Wonderland). Selecting the drink would then trigger the scene transition and it would change
                     to the corresponding decade. If we had more time, it would have been nice to have other decades like the 1950s or even a
                     different century like the 1800s or 1700s.</br>
-
-
-
-
                   </p>
 
 
         </div>
 
         <div class="row">
-                  <p  class = "description2" style="margin-top:5%; margin-left:0%; margin-right:0%; margin-bottom:1%;">
-                    <strong style="font-size:2em;">Acknowledgment</strong></br>
+                  <p  class = "description2-2">
+                    <strong class="section-title">Acknowledgment</strong></br>
                   </br>
                   This project was part of a team work for the course "Virtual Environments" at the Information School
                   at UT Austin. It was supervised by <strong>Dr. Jakki Bailey</strong> and I had the chance to collaborate with <strong>Sashank Sai Marcharla</strong>
                   and <strong>Kaitlyn Salazar</strong> as my wonderful teammates.
-
-
-
-
                   </p>
 
 
