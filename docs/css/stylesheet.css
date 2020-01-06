@@ -1,6 +1,6 @@
 
 
-@media only screen and (min-width: 900px){/*For PC */
+
   .navbar navbar-expand-lg navbar-light bg-light{
     position: fixed;
     top: 0;
@@ -21,9 +21,8 @@
     border-radius: 2.5rem;;
   }
   #homePage{
-    position: absolute;
-    left: 0;
-    top:50%;
+    position: relative;
+
     width: 100%;
   }
   /*Start quote CSS*/
@@ -99,7 +98,6 @@
 
   }
   #links{
-    margin-top: 25%;
   }
   .projectDesc {
 
@@ -128,6 +126,10 @@
   .white{
     color:white;
     font-weight: 100;
+  }
+
+  .left{
+    text-align: left;
   }
   #htmlEffect{
     font-family: courier;
@@ -181,13 +183,7 @@
   #top-img{
     width: 100%;
   }
-  .container{
 
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
   .container-fluid{
     padding-top: 0;
     margin:0;
@@ -429,7 +425,7 @@
     width:100%;
     margin:0% 0%;
   }
-}
+
 
 @media screen and (min-width: 600px) and (max-width: 900px) {/*For Tablet */
   .section-title{
@@ -457,6 +453,7 @@
     width: 100%;
   }
   #links{
+    text-align: left;
     margin-top: 5%;
   }
   .start {

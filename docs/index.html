@@ -7,38 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+
+
+    <!-- Customized CSS and JS -->
     <link rel="stylesheet" href='css/stylesheet.css'>
+    <link rel="stylesheet" href='css/preload.css'>
+    <link rel="stylesheet" href='css/projects.css'>
     <link rel="stylesheet" href='css/variables.css'>
 
-    <title>
 
+
+    <title>
+      HesamAndalib
     </title>
   </head>
-  <body id="body" onload="typeWriter();">
+  <body>
 
-    <div class="container">
-      <div class="grid">
+    <div class="container" style="padding-top:10%;">
 
-        <div class="row">
-          <div id="homePage" class= "col-lg-12 col-md-12 col-sm-12">
+          <div class="row">
+                <div id="homePage">
+                  <p id="links">
+                    <a id="cvLink" class="white" href="HesamAndalib_CV_2020.pdf">CV</a>
+                    <span class="white"> | </span>
+                    <a  id="worksLink" class="white" href="projects.html">Works</a>
+                  </p>
 
-            <p id="links">
-              <a id="cvLink" class="white" href="HesamAndalib_CV_2020.pdf">CV</a>
-              <span class="white"> | </span>
-              <a  id="worksLink" class="white" href="projects.html">Works</a>
-            </p>
+              </div>
+          </div>
 
-            <div id="intro" class="white" content='Here you can find out more about'>
-            </div>
+          <div class="row">
+              <div id="intro" class="white" content='Here you can find out more about'>
+              </div>
+          </div>
 
-            <div id="htmlEffect" class ="start" content="<hesam> design technology </andalib>">
-            </div>
+          <div class="row">
+              <div id="htmlEffect" class ="start" content="<hesam> design technology </andalib>">
+              </div>
+          </div>
 
+          <div class="row">
             <div id="finishEffect" class ="start white"><span id="name"></span><span id="lastName"></span>
             </div>
+          </div>
 
+          <div class="row">
             <div id="me">
                <p id="bio" class="white">I am currently a graduate student at the <strong>Information School at UT Austin</strong>. I started my professional life as
                 an architecture practitioner and project engineer in the construction industry.
@@ -50,69 +65,18 @@
                 provide me with your valuable feedback by sending an email to handalib@utexas.edu.
               </p>
             </div>
-
           </div>
-        </div>
 
       </div>
-    </div>
-
-    <script>
-        document.getElementById("links").style.display = "none";
-        document.getElementById("intro").style.marginTop = "200px";
-        var i = 0;
-        var k=0
-        var txtIntro = document.getElementById("intro").getAttribute("content");
-        var txtName=document.getElementById("htmlEffect").getAttribute("content");
-        var name = "HESAM";
-        var lastName="ANDALIB";
-        var me = document.getElementById("me");
-        var speed1 = 50;
-        var speed2 = 150;
 
 
+<!-- Custom JavaScript -->
 
-
-        function typeWriter() {
-          me.setAttribute("style", "display:none;");
-          if (i < txtIntro.length) {
-            document.getElementById("intro").innerHTML += txtIntro.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed1);
-          }
-          else{
-            typeMyName();
-          }
-
-        function typeMyName(){
-            if (k<txtName.length){
-              document.getElementById("htmlEffect").innerHTML +=txtName.charAt(k);
-              k++;
-              setTimeout(typeWriter, speed2);
-            }
-            else{
-              document.getElementById("body").setAttribute("style", "background-color:#00006c;");
-              document.getElementById("intro").style.marginTop = "0%";
-              document.getElementById("links").style.display = "block";
-              document.getElementById("htmlEffect").style.display ="none";
-              document.getElementById("name").innerHTML += name;
-              document.getElementById("lastName").innerHTML += lastName;
-              me.setAttribute("style", "display:block;")
-            }
-
-          }
-
-        }
-
-    </script>
-
-
-
-
-<!-- Optional JavaScript -->
+    <script  src="js/indexLoad.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
