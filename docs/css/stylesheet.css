@@ -292,10 +292,20 @@
     font-size:18px;
     margin-right:0%;
     margin-left:0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .description2-3{
+    text-align: justify;
+    font-weight: 300;
+    font-style:normal;
+    line-height: 1.5em;
+    font-size:18px;
+    margin-right:0%;
+    margin-left:0%;
     margin-top: 15%;
     margin-bottom: 1%;
   }
-
 
   .description3{
     text-align: justify;
@@ -426,6 +436,11 @@
     margin:0% 0%;
   }
 
+  .footer{
+    justify-content: center;
+    margin-left:50%;
+  }
+
 
 @media screen and (min-width: 600px) and (max-width: 900px) {/*For Tablet */
   .section-title{
@@ -540,6 +555,18 @@
     font-size:18px;
     margin-right:0%;
     margin-left:0%;
+    margin-top: 15%;
+    margin-bottom: 1%;
+  }
+
+  .description2-3{
+    text-align: justify;
+    font-weight: 300;
+    font-style:normal;
+    line-height: 1.5em;
+    font-size:18px;
+    margin-right:0%;
+    margin-left:10%;
     margin-top: 15%;
     margin-bottom: 1%;
   }
@@ -793,7 +820,17 @@
     margin-bottom: 2%;
 
   }
-
+  .description2-3{
+    text-align: justify;
+    font-weight: 300;
+    font-style:normal;
+    line-height: 1.2em;
+    font-size:14px;
+    margin-right:5%;
+    margin-left:5%;
+    margin-top: 15%;
+    margin-bottom: 1%;
+  }
   .description3{
     text-align: justify;
     font-weight: 300;

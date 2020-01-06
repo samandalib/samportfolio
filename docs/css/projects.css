@@ -4,6 +4,7 @@
   margin-top: 4%;
 }
 
+
 .gifshow{
   display: flex;
   width:100%;
@@ -134,17 +135,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  .code{
+    align-content: center;
+    margin-left: 10%;
+  }
   .p1full{
     margin-top: 50px;
     display: flex;
     width:100%;
   }
-  .p1full-2{
-    margin-top: 50px;
-    display: flex;
-    width:100%;
-    margin-left:25%;
-  }
+
   .p4full{
     margin-top: 0px;
     display: flex;
