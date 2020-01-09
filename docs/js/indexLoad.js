@@ -10,7 +10,7 @@ window.onload = ()=>
     var lastName="ANDALIB";
     var me = document.getElementById("me");
     var speed1 = 50;
-    var speed2 = 150;
+    var speed2 = 200;
     typeWriter();
 
 
@@ -18,6 +18,7 @@ window.onload = ()=>
     function typeWriter() {
       me.setAttribute("style", "display:none;");
       if (i < txtIntro.length) {
+        console.log("if statement")
         document.getElementById("intro").innerHTML += txtIntro.charAt(i);
         i++;
         setTimeout(typeWriter, speed1);
