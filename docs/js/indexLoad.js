@@ -1,5 +1,24 @@
 window.onload = ()=>
 {
+
+
+    var cursor = true;
+    var speed = 220;
+
+    setInterval(() => {
+       if(cursor) {
+         document.getElementById('cursor').style.opacity = 0;
+         cursor = false;
+       }else {
+         document.getElementById('cursor').style.opacity = 1;
+         cursor = true;
+       }
+    }, speed);
+
+
+    var cursor2 = document.getElementById("htmlEffect").innerHTML;
+
+    document.getElementById("myProgress").style.display = "none";
     document.getElementById("links").style.display = "none";
     document.getElementById("intro").style.marginTop = "200px";
     var i = 0;
@@ -17,7 +36,6 @@ window.onload = ()=>
     function typeWriter() {
       me.setAttribute("style", "display:none;");
       if (i < txtIntro.length) {
-        console.log("if statement")
         document.getElementById("intro").innerHTML += txtIntro.charAt(i);
         i++;
         setTimeout(typeWriter, 0);
@@ -29,16 +47,21 @@ window.onload = ()=>
     }
 
     function typeMyName(){
-        if (k<txtName.length){
-          document.getElementById("htmlEffect").innerHTML +=txtName.charAt(k);
+        if (k<txtName.length+1){
+          let current = txtName.substring(0,k)
+          let text = current.concat(cursor2);
+          document.getElementById("htmlEffect").innerHTML = text;
           k++;
           setTimeout(typeWriter, speed2);
+
+
         }
         else{
-
-          setTimeout(showContent, 1000);
+          move();
+          setTimeout(showContent, 1200);
 
           function showContent(){
+            document.getElementById("myProgress").style.display="none";
             document.getElementsByTagName("body")[0].setAttribute("style", "background-color:#505050;");
             document.getElementById("intro").style.marginTop = "0%";
             document.getElementById("links").style.display = "block";
@@ -51,5 +74,25 @@ window.onload = ()=>
         }
 
       }
+
+  function move() {
+    document.getElementById("myProgress").style.display="block";
+    var i = 0;
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+    }
+  }
 
 }

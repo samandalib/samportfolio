@@ -1,6 +1,17 @@
 
+  #cursor{
+    font-weight: 900;
+  }
+  #myProgress {
+    width: 50%;
+    background-color: #ddd;
+  }
 
-
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: black;
+  }
   .navbar navbar-expand-lg navbar-light bg-light{
     position: fixed;
     top: 0;
@@ -120,8 +131,12 @@
 
     text-align: left;
     letter-spacing:16px;
-    font-size: 80px;
+    font-size: 124px;
     line-height: 1;
+  }
+
+  .basic{
+    font-size: 100px;
   }
   .white{
     color:white;
@@ -134,6 +149,8 @@
   #htmlEffect{
     margin-top: 10%;
     font-family: courier;
+    animation: blink-caret .5s step-end infinite;
+
   }
   #finishEffect{
     white-space:nowrap;
