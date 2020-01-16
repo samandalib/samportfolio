@@ -14,14 +14,14 @@ window.onload = ()=>
     typeWriter();
 
 
-
     function typeWriter() {
       me.setAttribute("style", "display:none;");
       if (i < txtIntro.length) {
         console.log("if statement")
         document.getElementById("intro").innerHTML += txtIntro.charAt(i);
         i++;
-        setTimeout(typeWriter, speed1);
+        setTimeout(typeWriter, 0);
+
       }
       else{
         typeMyName();
@@ -35,13 +35,19 @@ window.onload = ()=>
           setTimeout(typeWriter, speed2);
         }
         else{
-          document.getElementsByTagName("body")[0].setAttribute("style", "background-color:#505050;");
-          document.getElementById("intro").style.marginTop = "0%";
-          document.getElementById("links").style.display = "block";
-          document.getElementById("htmlEffect").style.display ="none";
-          document.getElementById("name").innerHTML += name;
-          document.getElementById("lastName").innerHTML += lastName;
-          me.setAttribute("style", "display:block;")
+
+          setTimeout(showContent, 1000);
+
+          function showContent(){
+            document.getElementsByTagName("body")[0].setAttribute("style", "background-color:#505050;");
+            document.getElementById("intro").style.marginTop = "0%";
+            document.getElementById("links").style.display = "block";
+            document.getElementById("htmlEffect").style.display ="none";
+            document.getElementById("name").innerHTML += name;
+            document.getElementById("lastName").innerHTML += lastName;
+            me.setAttribute("style", "display:block;")
+          }
+
         }
 
       }

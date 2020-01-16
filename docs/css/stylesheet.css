@@ -120,7 +120,7 @@
 
     text-align: left;
     letter-spacing:16px;
-    font-size: 124px;
+    font-size: 80px;
     line-height: 1;
   }
   .white{
@@ -132,6 +132,7 @@
     text-align: left;
   }
   #htmlEffect{
+    margin-top: 10%;
     font-family: courier;
   }
   #finishEffect{
