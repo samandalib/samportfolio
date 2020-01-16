@@ -62,7 +62,7 @@ window.onload = ()=>
 
           function showContent(){
             document.getElementById("myProgress").style.display="none";
-            document.getElementsByTagName("body")[0].setAttribute("style", "background-color:#505050;");
+            document.getElementsByTagName("body")[0].setAttribute("style", "background-color:#F39C12;");
             document.getElementById("intro").style.marginTop = "0%";
             document.getElementById("links").style.display = "block";
             document.getElementById("htmlEffect").style.display ="none";
