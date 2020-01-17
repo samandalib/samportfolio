@@ -1,6 +1,8 @@
 window.onload = ()=>
 {
-
+    //document.getElementById("YellowPage").setAttribute('style','display:none');
+    let works = document.getElementById('works');
+    works.setAttribute('style', 'display:none');
 
     var cursor = true;
     var speed = 220;
@@ -29,7 +31,7 @@ window.onload = ()=>
     var lastName="ANDALIB";
     var me = document.getElementById("me");
     var speed1 = 50;
-    var speed2 = 200;
+    var speed2 = 100;
     typeWriter();
 
 
@@ -61,8 +63,9 @@ window.onload = ()=>
           setTimeout(showContent, 1200);
 
           function showContent(){
+            //document.getElementById("YellowPage").setAttribute('style','display:block');
             document.getElementById("myProgress").style.display="none";
-            document.getElementsByTagName("body")[0].setAttribute("style", "background-color:#F39C12;");
+            document.getElementsByClassName("firstPage")[0].setAttribute("style", "background-color:#FFA500;");
             document.getElementById("intro").style.marginTop = "0%";
             document.getElementById("links").style.display = "block";
             document.getElementById("htmlEffect").style.display ="none";

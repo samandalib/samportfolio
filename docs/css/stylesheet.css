@@ -1,4 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+.firstPage{
+  height: 100vh;
+}
+.anim{
+  opacity:0;
+}
 
+.banner{
+  position:absolute;
+  align-content: center;
+  margin-top: 2%;
+
+}
+.label{
+  position:relative;
+  top:80px;
+  left:-100px;
+}
+.icon{
+  position:relative;
+  top:80px;
+  left:650px;
+}
+
+.projectblock{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@keyframes anim1{
+  from{
+    transform: translateY(-100px);
+    opacity:0;
+  }
+  to{
+    transform: translateY(0);
+    opacity:1;
+  }
+}
   #cursor{
     font-weight: 900;
   }
@@ -23,10 +65,6 @@
     font-size: 12px;
     color: gray;
     text-align: center;
-  }
-  .project img{
-
-    margin:5px  2.5px;
   }
   .rounded-corner{
     border-radius: 2.5rem;;
@@ -90,12 +128,7 @@
   }
   /*End Quote */
 
-  .banner{
-    margin-bottom:2%;
-  }
-  .icon-container img:hover{
-    transform:scale(0.95);
-  }
+
   .section-title{
     font-size: 4em;
     font-style: normal;
@@ -166,6 +199,7 @@
     font-family:  normal, sans-serif;
     font-weight: 200;
     white-space: nowrap;
+    margin-top: 0;
   }
   #bio{
     font-weight: 300;
@@ -427,7 +461,7 @@
   #sketch-title{
     margin-top: 0;
     margin-left: 3%;
-    font-weight:300;
+    font-weight:600;
     font-size:28px;
   }
   #projectBrief{
@@ -456,7 +490,8 @@
 
   .footer{
     justify-content: center;
-    margin-left:50%;
+    align-items: center;
+    margin: 0px auto;
   }
 
 
@@ -494,13 +529,14 @@
     letter-spacing:15px;
     text-align: center;
     display: block;
+    margin-top: 25%;
 
   }
   #intro{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 12px;
-
+    margin-top: 0;
     text-align: left;
 
   }
@@ -511,6 +547,7 @@
       font-size: 14px;
       margin-left: 25px;
       margin-right: 25px;
+      margin-top: 20%;
     }
   #myphoto{
       width: 100%;
@@ -724,6 +761,29 @@
 
 @media screen and (max-width: 600px) {/*For Phone */
 
+  #works{
+    background-color: #4169E1;
+  }
+  .banner{
+    position:absolute;
+    align-content: center;
+    margin-top: 2%;
+    width:auto;
+    display:none;
+
+  }
+  .label{
+    position:relative;
+    top:auto;
+    left:auto;
+    width:50%;
+    margin: 5% auto;
+  }
+  .icon{
+    position:relative;
+    top:auto;
+    left:auto;
+  }
   .fixed-nav-bar {
     position: fixed;
     top: 0;
@@ -740,11 +800,12 @@
     text-align: center;
   }
   #links{
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-left: 5px;
   }
   #homePage{
     position: absolute;
-    left: 0;
+    left: 10%;
     top:10%;
     width: 100%;
   }
@@ -753,6 +814,7 @@
     letter-spacing:8px;
     text-align: center;
     display: block;
+    margin-top: 25%;
   }
   #intro{
     font-family: 'Raleway', sans-serif;
@@ -761,6 +823,7 @@
     font-size: 14px;
 
     text-align: left;
+    margin-top: 25%;
 
   }
   #bio{
@@ -770,6 +833,7 @@
     font-size: 14px;
     margin-left: 5px;
     margin-right: 10px;
+    margin-top: 25%;
   }
   #myphoto{
     width: 100%;
@@ -781,7 +845,6 @@
   .container{
     display:flex;
     flex-wrap: wrap;
-    margin-top: 25%;
     width: 100%;
     justify-content: center;
   }
@@ -977,8 +1040,10 @@
     padding-left: 1%;
   }
   #sketch-title{
-    margin-top: 50px;
+    margin: 0px auto;
     font-size:24px;
+    color:white;
+
   }
   .top-left {
     position: absolute;

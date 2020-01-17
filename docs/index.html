@@ -16,7 +16,7 @@
     <link rel="stylesheet" href='css/preload.css'>
     <link rel="stylesheet" href='css/projects.css'>
     <link rel="stylesheet" href='css/variables.css'>
-
+    <script  src="js/navbar.js"></script>
 
 
     <title>
@@ -24,60 +24,268 @@
     </title>
   </head>
   <body>
-    <div class="container">
-        <p id="htmlEffect" class ="start basic" content="&#8249;hesam&#8250;<br/>design<br/>technology<br/>&#8249;/andalib&#8250;"><span id="cursor">|</span></p>
 
-      <div id="myProgress">
-        <div id="myBar"></div>
+    <section class="firstPage">
+      <div class="container">
+          <p id="htmlEffect" class ="start basic" content="&#8249;hesam&#8250;<br/>design<br/>technology<br/>&#8249;/andalib&#8250;"><span id="cursor">|</span></p>
+
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+
+      </div>
+      <div class="container" style="padding-top:10%;">
+
+            <div class="row">
+                  <div id="homePage">
+                    <p id="links" class="anim" data-delay='2s'>
+                      <a id="cvLink" class="white" href="HesamAndalib_CV_2020.pdf">CV</a>
+                      <span class="white"> | </span>
+                      <a  id="worksLink" class="white" href="#works" onclick='showWorks()'>Works</a>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="intro" class="white left anim" data-delay='0s' content='Here you can find out more about'>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+              <div id="finishEffect" class ="start white anim" data-delay='.5s'><span id="name"></span><span id="lastName"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div id="me">
+                 <p id="bio" class="white anim" data-delay='1s'>I am currently a graduate student at the <strong>Information School at UT Austin</strong>. I started my professional life as
+                  an architecture practitioner and project engineer in the construction industry.
+                  I co-founded a design-build startup that was active until early 2019 when I decided to continue my education in Information School.
+                  I enjoy spending my time and energy to work on solving problems that require <strong>research, design, scientific approach, usability test, and adjustment</strong>.
+                  Seeing the result of the design and learning from the user's experiences in using the design product is what I'm looking for. In my method of work,
+                  <strong>the quality of the design process to the result is as important as the final product</strong> and it requires the existence of a management method that
+                  values the process as much as the result. I wish you a great experience while exploring my works and I will deeply appreciate it if you
+                  provide me with your valuable feedback by sending an email to handalib@utexas.edu.
+                </p>
+              </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="works">
+
+
+      <div class="container">
+        <div class="grid">
+
+          <div class="row" style="margin-bottom: 50px;">
+              <h3 id='sketch-title' class="anim" data-delay='0s'> Technology Projects<hr></h3>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                      <div class= "col-lg-12 col-md-12 col-sm-12">
+
+                            <a id="tech1" href="tech1.html" class="projectblock">
+
+                              <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                              onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                              <img src="images/tech1/locatify.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                              <img src="images/tech1/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                            </a>
+
+
+                        </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                        <div class= "col-lg-12 col-md-12 col-sm-12">
+                              <a id="tech2" href="tech2.html" class="projectblock">
+
+                                <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                                onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                                <img src="images/tech2/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                                <img src="images/tech2/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                              </a>
+
+                      </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                        <div class= "col-lg-12 col-md-12 col-sm-12">
+
+                              <a id="tech3" href="tech3.html" class="projectblock">
+
+                                <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                                onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                                <img src="images/tech3/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                                <img src="images/tech3/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                              </a>
+
+
+
+                      </div>
+            </div>
+
+          <div class="row" style="margin-bottom: 50px; margin-top: 150px;">
+                    <h3 id='sketch-title' class="anim" data-delay='0s'> Architectural Projects<hr></h3>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                      <div class= "col-lg-12 col-md-12 col-sm-12">
+                          <div class="projectblock">
+                            <a id="project1" href="project1.html">
+
+                              <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                              onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                              <img src="images/project1/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                              <img src="images/project1/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                            </a>
+
+                        </div>
+                    </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                        <div class= "col-lg-12 col-md-12 col-sm-12">
+                          <div class="projectblock">
+                            <a id="project9" href="project9.html">
+
+                              <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                              onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                              <img src="images/project9/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                              <img src="images/project9/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                            </a>
+
+                        </div>
+                      </div>
+            </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                        <div class= "col-lg-12 col-md-12 col-sm-12">
+                          <div class="projectblock">
+
+                            <a id="project10" href="project10.html">
+
+                              <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                              onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                              <img src="images/project10/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                              <img src="images/project10/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                            </a>
+
+                        </div>
+                      </div>
+              </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                      <div class= "col-lg-12 col-md-12 col-sm-12">
+                        <div class="projectblock">
+
+                          <a id="project2" href="project2.html">
+
+                            <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                            onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                            <img src="images/project2/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                            <img src="images/project2/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                          </a>
+
+                      </div>
+                    </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                      <div class= "col-lg-12 col-md-12 col-sm-12">
+                        <div class="projectblock">
+
+                          <a id="project3" href="project3.html">
+
+                            <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                            onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                            <img src="images/project3/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                            <img src="images/project3/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                          </a>
+
+                        </div>
+                      </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 15%;">
+
+                        <div class= "col-lg-12 col-md-12 col-sm-12">
+                          <div class="projectblock">
+
+                            <a id="project4" href="project4.html">
+
+                              <img src="images/banner.svg" alt="banner" class="banner anim" data-delay="0s"
+                              onmouseover="this.src='images/banner2.svg'" onmouseout="this.src='images/banner.svg'"/>
+                              <img src="images/project4/icon.svg" alt="phoneIcon" class="icon anim" data-delay=".7s" />
+                              <img src="images/project4/text.svg" alt="text" class="label anim" data-delay=".9s" />
+
+                            </a>
+
+                          </div>
+                        </div>
+            </div>
+
       </div>
 
     </div>
+      <footer class="container" style="margin-top:5%;">
+      <div class="grid">
+        <div class="row">
+          <div class="footer">
 
-    <div class="container" style="padding-top:10%;">
+                          <a class="anim"  data-delay='0s' href="https://www.linkedin.com/in/hesam-andalib-36ba3428/"><img id="linkedin" src="images/logo/in.png"></a>
+                          <a class="anim"  data-delay='0s' href="https://github.com/samandalib"><img id="linkedin" src="images/logo/gt.png"></a>
 
-          <div class="row">
-                <div id="homePage">
-                  <p id="links">
-                    <a id="cvLink" class="white" href="HesamAndalib_CV_2020.pdf">CV</a>
-                    <span class="white"> | </span>
-                    <a  id="worksLink" class="white" href="projects.html">Works</a>
-                  </p>
-
-              </div>
-          </div>
-
-          <div class="row">
-              <div id="intro" class="white left" content='Here you can find out more about'>
-              </div>
 
           </div>
 
-
-          <div class="row">
-            <div id="finishEffect" class ="start white"><span id="name"></span><span id="lastName"></span>
-            </div>
+        </div>
+        <div class="row">
+          <div class="footer">
+            <div id='copyright'class="anim"  data-delay='0s'> ©Hesam Andalib 2020</div>
           </div>
-
-          <div class="row">
-            <div id="me">
-               <p id="bio" class="white">I am currently a graduate student at the <strong>Information School at UT Austin</strong>. I started my professional life as
-                an architecture practitioner and project engineer in the construction industry.
-                I co-founded a design-build startup that was active until early 2019 when I decided to continue my education in Information School.
-                I enjoy spending my time and energy to work on solving problems that require <strong>research, design, scientific approach, usability test, and adjustment</strong>.
-                Seeing the result of the design and learning from the user's experiences in using the design product is what I'm looking for. In my method of work,
-                <strong>the quality of the design process to the result is as important as the final product</strong> and it requires the existence of a management method that
-                values the process as much as the result. I wish you a great experience while exploring my works and I will deeply appreciate it if you
-                provide me with your valuable feedback by sending an email to handalib@utexas.edu.
-              </p>
-            </div>
-          </div>
+        </div>
 
       </div>
+    </footer>
+    </section>
+
+
+
 
 
 <!-- Custom JavaScript -->
+    <script>
+    function showWorks(){
+      let works = document.getElementById('works');
+      works.setAttribute('style', 'display:block');
+    }
+    </script>
 
     <script  src="js/indexLoad.js"></script>
+    <script src= "js/intSecObsAnim.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
