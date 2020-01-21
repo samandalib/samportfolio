@@ -65,7 +65,17 @@ window.onload = ()=>
           function showContent(){
             //document.getElementById("YellowPage").setAttribute('style','display:block');
             document.getElementById("myProgress").style.display="none";
-            document.getElementsByClassName("firstPage")[0].setAttribute("style", "background-color:#FFA500;");
+
+            let colors= ["#191970", "#FFA500", "#32CD32", "#FF0000", "#512E5F"]
+            setTimeout(changeColor(colors), 5000);
+            function changeColor(colors){
+              let i = Math.random();
+              i *=colors.length;
+              i= Math.floor(i);
+              document.getElementsByClassName("firstPage")[0].setAttribute("style", `background-color:${colors[i]};`);
+
+            }
+
             document.getElementById("intro").style.marginTop = "0%";
             document.getElementById("links").style.display = "block";
             document.getElementById("htmlEffect").style.display ="none";
