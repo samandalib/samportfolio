@@ -66,7 +66,7 @@ window.onload = ()=>
             //document.getElementById("YellowPage").setAttribute('style','display:block');
             document.getElementById("myProgress").style.display="none";
 
-            let colors= ["#191970", "#FFA500", "#32CD32", "#FF0000", "#512E5F"]
+            let colors= ["#191970", "#FFA500", "#0ABAB5", "#FF0000", "#512E5F"]
             setTimeout(changeColor(colors), 5000);
             function changeColor(colors){
               let i = Math.random();
