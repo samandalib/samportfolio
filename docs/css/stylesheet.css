@@ -181,9 +181,10 @@ html {
   .start{
 
     text-align: left;
-    letter-spacing:16px;
     font-size: 124px;
     line-height: 1;
+    letter-spacing: 16px;
+
   }
 
   .basic{
@@ -238,7 +239,7 @@ html {
     text-align: left;
     letter-spacing:normal;
     font-size: 18px;
-    margin-top:6px;
+    
     margin-left: 20px;
   }
   #sub_head{
@@ -566,8 +567,7 @@ html {
     margin-top: 5%;
   }
   .start {
-    font-size: 32px;
-    letter-spacing:15px;
+    font-size: 28px;
     text-align: center;
     display: block;
     margin-top: 25%;
