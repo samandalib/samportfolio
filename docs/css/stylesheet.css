@@ -1,7 +1,40 @@
 html {
   scroll-behavior: smooth;
+
+}
+body {
+  align-content: center;
+  display:block;
+
 }
 
+.center-pic{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#titlesec{
+  background-image:url("../images/tech1/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#subhead{
+  font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 0px;
+    font-size: 16pt;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
 .firstPage{
   height: 100vh;
 }
@@ -133,14 +166,16 @@ html {
 
 .project-title{
   font-size: 4em;
-  margin-bottom:2%;
   margin-left:auto;
   margin-right:auto;
   font-style:normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+
 }
 
 .shorts{
-  text-align: center;
+  text-align: left;
   font-weight: 200;
   font-style:normal;
   padding:0 4em;
@@ -150,6 +185,8 @@ html {
   .section-title{
     font-size: 2em;
     font-style: normal;
+    color:#539CFF;
+    font-weight: 500;
   }
   #name{
     font-weight: 400;
@@ -239,7 +276,7 @@ html {
     text-align: left;
     letter-spacing:normal;
     font-size: 18px;
-    
+
     margin-left: 20px;
   }
   #sub_head{
@@ -317,7 +354,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:3%;
     margin-top:15%;
     margin-bottom: 12.5%;
@@ -327,7 +364,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:3%;
     margin-top:1%;
     margin-bottom: 5%;
@@ -337,7 +374,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:25%;
     margin-left:25%;
     margin-top: 12.5%;
@@ -345,10 +382,10 @@ html {
   }
   .description2-1{
     text-align: justify;
-    font-weight: 300;
+    font-weight: 400;
     font-style:normal;
     line-height: 1.5em;
-    font-size:16px;
+    font-size:14pt;
     margin-right:15%;
     margin-left:15%;
     margin-top:15%;
@@ -357,10 +394,10 @@ html {
 
   .description2-1-1{
 
-    font-weight: 300;
+    font-weight: 400;
     font-style:normal;
     line-height: 1.5em;
-    font-size:16px;
+    font-size:14pt;
     margin-right:1%;
     margin-left:15%;
     margin-top:15%;
@@ -372,7 +409,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:0%;
     margin-left:0%;
     margin-top: 1%;
@@ -383,7 +420,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:0%;
     margin-left:0%;
     margin-top: 15%;
@@ -395,7 +432,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:25%;
     margin-left:25%;
     margin-top: 10%;
@@ -403,10 +440,10 @@ html {
   }
   .description4{
     text-align: justify;
-    font-weight: 300;
+    font-weight: 400;
     font-style:normal;
     line-height: 1.5em;
-    font-size:18px;
+    font-size:14pt;
     margin-right:10%;
     margin-left:10%;
     margin-top: 25%;
@@ -417,7 +454,7 @@ html {
     font-weight: 300;
     font-style:normal;
     line-height: 1.5em;
-    font-size:16px;
+    font-size:14pt;
     margin-right:0%;
     margin-left:0;
     margin-top: 25%;
@@ -634,7 +671,7 @@ html {
   }
   .description2-1{
     text-align: justify;
-    font-weight: 300;
+    font-weight: 400;
     font-style:normal;
     line-height: 1.5em;
     font-size:14px;
@@ -923,7 +960,7 @@ html {
   }
   .description2-1{
     text-align: justify;
-    font-weight: 300;
+    font-weight: 400;
     font-style:normal;
     line-height: 1.5em;
     font-size:24px;
