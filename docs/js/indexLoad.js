@@ -20,9 +20,13 @@ window.onload = ()=>
 
     var cursor2 = document.getElementById("htmlEffect").innerHTML;
 
+
     document.getElementById("myProgress").style.display = "none";
     document.getElementById("links").style.display = "none";
+    document.getElementById("intro").style.display = "none";
     document.getElementById("intro").style.marginTop = "200px";
+    document.getElementById("myphoto").style.display = "none";
+    document.getElementById("mygreeting").style.display="none";
     var i = 0;
     var k=0
     var txtIntro = document.getElementById("intro").getAttribute("content");
@@ -65,22 +69,15 @@ window.onload = ()=>
           function showContent(){
             //document.getElementById("YellowPage").setAttribute('style','display:block');
             document.getElementById("myProgress").style.display="none";
-
-            let colors= ["#191970", "#FFA500", "#0ABAB5", "#FF0000", "#512E5F"]
-            setTimeout(changeColor(colors), 5000);
-            function changeColor(colors){
-              let i = Math.random();
-              i *=colors.length;
-              i= Math.floor(i);
-              document.getElementsByClassName("firstPage")[0].setAttribute("style", `background-color:${colors[i]};`);
-
-            }
-
             document.getElementById("intro").style.marginTop = "0%";
+            document.getElementById("intro").style.display = "block";
+
             document.getElementById("links").style.display = "block";
             document.getElementById("htmlEffect").style.display ="none";
             document.getElementById("name").innerHTML += name;
             document.getElementById("lastName").innerHTML += lastName;
+            document.getElementById("myphoto").style.display = "block";
+            document.getElementById("mygreeting").style.display="block";
             me.setAttribute("style", "display:block;")
           }
 
