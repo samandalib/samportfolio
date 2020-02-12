@@ -37,7 +37,7 @@ body {
 }
 }
 .firstPage{
-  height: 100vh;
+  height: 50vh;
 }
 .anim{
   opacity:0;
@@ -228,9 +228,9 @@ body {
   .start{
 
     text-align: left;
-    font-size: 124px;
+    font-size:36pt;
     line-height: 1;
-    letter-spacing: 16px;
+    letter-spacing: 10px;
 
   }
 
@@ -238,7 +238,7 @@ body {
     font-size: 100px;
   }
   .white{
-    color:white;
+    color:#4e4e4e;
     font-weight: 100;
   }
 
@@ -256,10 +256,12 @@ body {
   }
   #cvLink{
     font-family: 'Raleway', sans-serif;
+    color:#071F4C;
 
   }
   #worksLink{
     font-family: 'Raleway', sans-serif;
+    color:#071F4C;
   }
   #intro{
     font-family:  normal, sans-serif;
@@ -272,7 +274,7 @@ body {
     font-style:normal;
     line-height: 1.5em;
     text-align: justify;
-    font-size:16px;
+    font-size:12pt;
     margin-right:3%;
     margin-top: 0%;
 
@@ -612,6 +614,7 @@ body {
   #links{
     text-align: left;
     margin-top: 5%;
+    color:#071F4C ;
   }
   .start {
     font-size: 28px;
