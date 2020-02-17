@@ -462,11 +462,11 @@ body {
     margin-bottom: 25%;
   }
   .description4-1{
-    text-align: justify;
+    text-align: left;
     font-weight: 300;
     font-style:normal;
-    line-height: 1.5em;
-    font-size:14pt;
+    line-height: 1em;
+    font-size:12pt;
     margin-right:0%;
     margin-left:0;
     margin-top: 25%;
