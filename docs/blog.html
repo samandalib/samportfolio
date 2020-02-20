@@ -29,6 +29,10 @@
     <script  src="js/preloader.js"></script>
     <script  src="js/navbar.js"></script>
 
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
   </head>
   <body>
 
@@ -65,7 +69,9 @@
                     <p  class = "description2-2">
                       <strong class="section-title">Technology Learning Studio</strong><br/>
                     <br/>
-                    The first project I am going to focus on is a web application that employes React.js as the library
+
+                    <h3> Session 1</h3><br>
+                    The project I am going to focus on is a web application that employes React.js as the library
                     for front end development phase. Also I am going to work with Express.js as the Back-End.
                     The resorces that I am going to work on are Linkedin Learning tutorials, Blogs, Medium and videos on YouTube.
                     Some of the blogs that will help me in this way are:<br />
@@ -79,10 +85,110 @@
                       </ul>
 
                     </span>
-                    At the first step of the project, I am going to organize and make an abstract model of an old
-                    unfinished project that I have worke on and while recovering some previous knowledge, add some features and functions to it.
-                    a snapshot of the process can be seen in the follwing picture:<br>
-                    <img src="images/blog/workflow.jpg" width="100%"/>
+                    At the first step of the project, I am going to make an abstract model of the project that I want to work on and
+                    complete its parts during the other sessions. Since I am going to work with React.js, I have to define different
+                    parts of each page as a component, which can be used in other pages. Based on this concept. I made the following routes and components:
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="images/blog/c4.jpg" width="100%"/>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/blog/c3.jpg" width="100%"/>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/blog/c2.jpg" width="100%"/>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/blog/c1.jpg" width="100%"/>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>2nd Session</h3>
+
+            At the second session I started learning React.js component system. I used Linkedin learning videos and official React website and gitub pages
+            to get a clear understanding of how React works. The good thing is that the fundation is already prepared by the publisher and the main
+            work is to create components and join them together to work in desired way. In this session I orginized the application based on the map I created
+            in the last session:<br>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/blog/index.JPG" width="100%"/>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/blog/app.JPG" width="100%"/>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>3rd Session</h3>
+            One of the main part of every web application is working with external RESTful APIs. I had no knowledge how to work with an API. So I spend
+            the whole session exploring different APIs and how I can get something from an external api. I watched 2 courses on Linkedin learning and
+            learned basics of REST APIs and how I can use APIs in React.
+
+            <br>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/blog/api1.JPG" width="100%"/>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/blog/api2.JPG" width="100%"/>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>4th Session</h3>
+            After exploring and learning basics of REST APIs, I tried to use it in a simple way. I made a small React component that convert currencies to each other.
+            For doing the calculation I use the API feature of https://www.currencyconverterapi.com/. To test the API, at the following form, you can enter
+            an amount of money (for example 10), then the base currency in capital letters (like UDS), and the last the desired currency in capital letters (like IRR). By
+            clicking the convert button, the form will ask the api with the values you provided and the api will provide the calculated amount for you.
+            <br>
+            <br>
+            <div id="api">
+            </div>
+            <br>
+
+
+
+          </div>
+
+        </div>
+
+
+
 
 
 
@@ -118,6 +224,71 @@
 
       </div>
     </footer>
+
+    <script type="text/babel">
+
+      class CurrencyApi extends React.Component {
+          constructor(props){
+            super(props);
+            this.state={result:0}
+            this.handleSubmit= this.handleSubmit.bind(this);
+
+          }
+
+          handleSubmit(){
+            console.log('handleSubmit');
+            let baseValue=document.getElementById('baseValue').value;
+            let fromCurrency=document.getElementById('fromCurrency').value;
+            let toCurrency=document.getElementById('toCurrency').value;
+            let format= fromCurrency+"_"+toCurrency;
+            console.log(format)
+            let apiKey = "d87dad297473d6d5fa6b"
+            let baseLink = "https://free.currconv.com/api/v7/convert?q="
+            let link = baseLink+fromCurrency+"_"+toCurrency+"&compact=ultra&apiKey="+apiKey
+            console.log('linkTofetch', link)
+
+            fetch(link)
+              .then(res=> {return res.json()})
+              .then(data=>{
+                let key=Object.keys(data)[0]
+                let result = data[key]*baseValue
+                console.log('data ', data[key]*baseValue, typeof(data));
+                this.setState({result:result})
+              }
+              )
+              .catch(err=>console.log(err))
+
+
+          }
+
+
+          componentDidMount(){
+
+
+          }
+
+          render() {
+              return (
+
+                  <div>
+
+                    <input id="baseValue" type="number" name="baseValue" placeholder="Base Value" label="baseValue"/>
+                    <input id="fromCurrency" type="text" name="fromCurrency" placeholder="From Currency" laber="from currency"/>
+                    <input id="toCurrency" type="text" name="toCurrency" placeholder="To Currency" laber="to currency"/>
+                    <button type="button" name="button" onClick={this.handleSubmit}>Convert</button>
+                    <div id="result"> {this.state.result} </div>
+                  </div>
+
+              );
+            }
+          }
+
+        ReactDOM.render(
+        <CurrencyApi />,
+        document.getElementById('api')
+      );
+    </script>
+
 
 
 
