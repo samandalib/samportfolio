@@ -17,7 +17,7 @@ body {
 }
 
 #titlesec{
-  background-image:url("../images/tech1/cover.jpg");
+
   background-repeat: no-repeat;
   background-size: 2000px;
   background-attachment: fixed;
@@ -592,7 +592,11 @@ body {
     margin: 0px auto;
   }
 
-
+@media (min-width: 1200px){
+  .container {
+      max-width: 900px;
+  }
+}
 @media screen and (min-width: 600px) and (max-width: 900px) {/*For Tablet */
   .section-title{
     font-size: 3em;

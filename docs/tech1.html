@@ -50,7 +50,7 @@
 
     <div class="se-pre-con"></div>
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed; background-color:#ffffff;top: 0; left: 0; z-index: 9999; width: 100%;">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light scrolled" style="position:fixed; background-color:#ffffff;top: 0; left: 0; z-index: 9999; width: 100%;">
       <a class="navbar-brand" href="index.html" id ="des-top"> <strong>HESAM</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,7 @@
               </div>
 
 
-            <div id="titlesec">
+            <div id="titlesec" style="background-image:url('./images/tech1/cover.jpg')">
 
             </div>
 
@@ -135,7 +135,7 @@
                           <br>  <br>
 
                           <span>
-                          <strong style="color:#539CFF;">MY TAKE OVERS<br></strong>
+                          <strong style="color:#539CFF;">MY TAKEAWAYS<br></strong>
                           Understanding the challenges of using AR applications, and the ways that can make them easier to be used by users in their routine life
                           </span>
                           <br>  <br>
@@ -355,7 +355,7 @@
 
                 <div class="row">
 
-                  <p class="description2-1"style="margin:0 0;">
+                  <p class="description2-1" style="margin:0 0;">
                     <strong>Selected Stakeholders for Research:</strong> <br>
                     After further looking at the potential stakeholders that’ll be involved in this project, we plan to conduct research with Students.<br>
                   </p><br>
@@ -929,20 +929,8 @@
 
 
     <script src= "js/intSecObsAnim.js"></script>
-    <script type="text/javascript">
-      let color= document.getElementById("titlesec").style.backgroundColor;
-      if (color){
-        let navbar=document.getElementById("navbar");
 
-        console.log('navbar', navbar)
-        navbar.setAttribute('style',`backgroundColor:${color}`);
-        let navbarColor=document.getElementById('navbar').style.backgroundColor;
-        console.log('navbarColor', navbarColor)
-
-      }
-      console.log('background color: ', color)
-    </script>
-
+    <script src="js/navScroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
