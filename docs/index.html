@@ -39,7 +39,7 @@
       HesamAndalib
     </title>
   </head>
-  <body>
+  <body style="background-color:black;">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed; display:none; background-color:#ffffff;top: 0; left: 0; z-index: 9999; width: 100%;">
       <a class="goTop" href="#introPage" style="color:#071F4C; font-size:20pt; font-weight:600; font-style:">&#9650;</a>
@@ -52,7 +52,7 @@
     </nav>
 
 
-    <section id="introPage" class="firstPage">
+    <section id="introPage" class="firstPage" style="background-color:black; height:100vh;">
 
       <!--
       <div class="container">
@@ -77,7 +77,10 @@
                       <p id="links" class="anim" data-delay='2s'>
                         <a id="cvLink"  href="HesamAndalib_CV_2020.pdf">CV</a>
                         <span class="white"> | </span>
+                        <a  id="worksLink"  href="#works" onclick='showWorks()'>About</a>
+                        <span class="white"> | </span>
                         <a  id="worksLink"  href="#works" onclick='showWorks()'>Projects</a>
+
 
                       </p>
 
@@ -92,7 +95,7 @@
 
               <div class="row">
                 <div class= "col-lg-12 col-md-12 col-sm-12" style="padding-left:0;">
-                  <div id="finishEffect" style=" color:#071F4C;" class ="start white anim" data-delay='.5s'><span id="name" style="font-weight:500;">HESAM</span><span style="font-weight:100;" id="lastName">ANDALIB</span>
+                  <div id="finishEffect" style=" color:white;" class ="start white anim" data-delay='.5s'><span id="name" style="font-weight:500;">HESAM</span><span style="font-weight:100;" id="lastName">ANDALIB</span>
                   </div>
                 </div>
               </div>
@@ -102,12 +105,13 @@
                     <div id="me">
 
                        <p id="bio" class="white anim" data-delay='1s'>
-                         {<br>
-                         Profession: <strong>[UX/UI Designer, Product Manager, UX Design Technologist ]</strong>,<br>
+                         <!--{<br>
+                         Practice: <strong>[UX/UI Design and Development ]</strong>,<br>
                          Graduate student: <strong>"iSchool at UT Austin"</strong>,<br>
-                         Characteristics: <strong>[Creative, Persistent, Fast Learner]</strong>, <br>
+                         Props: <strong>[Creative, Persistent, Fast Learner]</strong>, <br>
                          Workflow: <strong>[Research, Design, Test, learn, Adjust]</strong>,<br>
-                        }<br>
+                       }<br>-->
+                       A User Experience Designer
                       </p>
                     </div>
                   </div>
@@ -116,51 +120,30 @@
           </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <img id="myphoto" class="center-pic anim" data-delay='.8s' src="images/mecolor.jpg" alt="myphoto" style=" border-radius:50%;" width="75%;" class="center-pic">
-              <p  id="mygreeting" class="anim" data-delay='.8s' style="text-align:center;  font-size:12pt;font-weight: 400; "> <br>Hi! Welcome to my page.  I'm happy for not using a template to make it because I learned a lot! :) <br> Hit me up at handalib@utexas.edu   &#129304; <br />
+              <img id="myphoto" class="center-pic anim" data-delay='.8s' src="images/me.png" alt="myphoto" style=" width:100%;">
+              <!--
+              <p  id="mygreeting" class="anim" data-delay='.8s' style="text-align:center;  font-size:12pt;font-weight: 400; "> <br>Hi! Welcome to my page. <br> Hit me up at handalib@utexas.edu<br />
                 <br>
                 <a class="anim"  data-delay='.8s' href="https://www.linkedin.com/in/hesam-andalib-36ba3428/"><img id="linkedin" src="images/logo/in.png"></a>
                 <a class="anim"  data-delay='.8s' href="https://github.com/samandalib"><img id="linkedin" src="images/logo/gt.png"></a>
               </p>
+            -->
             </div>
 
           </div>
 
 
-        <div class="row">
-
-              <p style="font-size:10pt; text-align:center; color:#ffffff; font-weight:100; margin-bottom:0;">
-                &#9400;
-              </p>
-
-
-        </div>
-
       </div>
 
     </section>
 
-    <section id="works">
+    <section id="works" style="margin-top:5%; ">
 
 
       <div class="container">
         <div class="grid">
 
-          <div class="row" style="margin-bottom: 60%; margin-left:auto; margin-right:auto;">
 
-                      <div class= "col-lg-12 col-md-12 col-sm-12">
-
-
-
-                            <a id="google" href='google.html' class="projectblock">
-                              <img width="100%;"  src="images/google/banner.png" alt="banner" class="banner"
-                              onmouseover="this.src='images/google/banner2.svg'" onmouseout="this.src='images/google/banner.png'"/>
-
-                            </a>
-
-
-                      </div>
-          </div>
 
 
           <div class="row" style="margin-bottom: 60%; margin-left:auto; margin-right:auto;">
@@ -172,6 +155,22 @@
                             <a id="tech1" href='tech1.html' class="projectblock">
                               <img width="100%;"  src="images/tech1/banner.png" alt="banner" class="banner"
                               onmouseover="this.src='images/tech1/banner2.svg'" onmouseout="this.src='images/tech1/banner.png'"/>
+
+                            </a>
+
+
+                      </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 60%; margin-left:auto; margin-right:auto;">
+
+                      <div class= "col-lg-12 col-md-12 col-sm-12">
+
+
+
+                            <a id="google" href='google.html' class="projectblock">
+                              <img width="100%;"  src="images/google/banner.png" alt="banner" class="banner"
+                              onmouseover="this.src='images/google/banner2.svg'" onmouseout="this.src='images/google/banner.png'"/>
 
                             </a>
 
