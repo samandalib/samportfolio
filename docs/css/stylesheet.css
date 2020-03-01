@@ -272,14 +272,9 @@ body {
   #finishEffect{
     white-space:nowrap;
   }
-  #cvLink{
+  .links{
     font-family: 'Raleway', sans-serif;
     color:#006699;
-
-  }
-  #worksLink{
-    font-family: 'Raleway', sans-serif;
-    color:#006699 ;
   }
   #intro{
     font-family:  normal, sans-serif;
