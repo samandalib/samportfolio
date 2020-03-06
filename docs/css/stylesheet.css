@@ -556,7 +556,7 @@ body {
     text-align: center;
     font-size: 12px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    align-content: center;
   }
   .social{
     align-content: center;
@@ -564,8 +564,13 @@ body {
   #linkedin{
     width: 25px;
     height: 25px;
-    opacity: 50%;
   }
+
+  #git{
+    width: 25px;
+    height: 25px;
+  }
+
   #sketch-title{
     margin-top: 0;
     margin-left: 3%;

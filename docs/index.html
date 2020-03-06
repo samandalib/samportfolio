@@ -42,7 +42,6 @@
   <body style="background-color:#030303;">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed; opacity:0.5; display:none; background-color:#ffffff;top: 0; left: 0; z-index: 9999; width: 100%;">
-      <a class="goTop" href="#introPage" style="color:#071F4C; font-size:20pt; font-weight:600; font-style:">&#9650;</a>
       <a class="navbar-brand" href="index.html" id ="des-top"><strong>HESAM</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,88 +51,42 @@
     </nav>
 
 
-    <section id="introPage" class="firstPage" style="background-color:black; background-image: url('bg.jpg'); background-size: 2000px; height:100vh;">
+    <section  style="background-color:black; background-image: url('bgs.jpg'); background-size: 2000px; height:100vh;">
 
-      <!--
-      <div class="container">
-          <p id="htmlEffect" class ="start basic" content="&#8249;hesam&#8250;<br/>design<br/>technology<br/>&#8249;/andalib&#8250;"><span id="cursor">|</span></p>
-
-        <div id="myProgress">
-          <div id="myBar"></div>
-        </div>
-
-      </div> -->
-      <div class="container" style="padding-top:10%;">
-
-
-        <div class="row">
-
-          <div class="col-lg-8 col-md-6 col-sm-12">
 
             <div class="container">
 
-              <div class="row">
-                    <div id="homePage">
-                      <p id="links" class="" data-delay='2s'>
-                        <a  class="links" href="HesamAndalib_CV_2020.pdf">CV </a>
-                        <span class=" white"> | </span>
-                        <a  class="links"  href="./about.html"> About </a>
-                        <span class="white"> | </span>
-                        <a class="links"  href="#works" onclick='showWorks()'>Projects</a>
 
+                <div class="row" style="padding-top:20%; margin:0;" >
 
-                      </p>
-
-                  </div>
-              </div>
-
-              <div class="row">
-                  <div id="intro" class="white left " data-delay='0s' content='Here you can find out more about'>
-                  </div>
-
-              </div>
-
-              <div class="row">
-                <div class= "col-lg-12 col-md-12 col-sm-12" style="padding-left:0;">
-                  <div id="finishEffect" style=" color:white;" class ="start white " data-delay='.5s'><span id="name" style="font-weight:500;">HESAM</span><span style="font-weight:100;" id="lastName">ANDALIB</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                  <div class= "col-lg-12 col-md-12 col-sm-12" style="padding-left:0;">
-                    <div id="me">
-
-                       <p id="bio" class="white " data-delay='1s'>
-                         <!--{<br>
-                         Practice: <strong>[UX/UI Design and Development ]</strong>,<br>
-                         Graduate student: <strong>"iSchool at UT Austin"</strong>,<br>
-                         Props: <strong>[Creative, Persistent, Fast Learner]</strong>, <br>
-                         Workflow: <strong>[Research, Design, Test, learn, Adjust]</strong>,<br>
-                       }<br>-->
-                       A User Experience Designer
+                  <div class= "col-lg-8 col-md-8 col-sm-12" style="padding-left:0;">
+                    <div>
+                      <p>
+                        <a  class="links" href="HesamAndalib_CV_2020.pdf"><button type="button" class="btn btn-outline-primary">CV</button></a>
+                        <a  class="links"  href="./about.html"> <button type="button" class="btn btn-outline-primary">About</button></a>
+                        <a class="links"  href="#works" onclick='showWorks()'><button type="button" class="btn btn-outline-primary">Projects</button></a>
                       </p>
                     </div>
+
+                    <div style=" color:white;" class ="start white ">
+                      <span style="font-weight:500;">HESAM</span><span style="font-weight:100;" id="lastName">ANDALIB</span><br>
+                      <p id="bio" class="white ">
+                        A User Experience Designer
+                      </p>
+                    </div>
+
                   </div>
-              </div>
-            </div>
-          </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <img id="myphoto" class="center-pic " data-delay='.8s' src="images/me.png" alt="myphoto" style=" opacity:0.5; width:100%;">
-              <!--
-              <p  id="mygreeting" class="" data-delay='.8s' style="text-align:center;  font-size:12pt;font-weight: 400; "> <br>Hi! Welcome to my page. <br> Hit me up at handalib@utexas.edu<br />
-                <br>
-                <a class=""  data-delay='.8s' href="https://www.linkedin.com/in/hesam-andalib-36ba3428/"><img id="linkedin" src="images/logo/in.png"></a>
-                <a class=""  data-delay='.8s' href="https://github.com/samandalib"><img id="linkedin" src="images/logo/gt.png"></a>
-              </p>
-            -->
+                  <div class= "col-lg-4 col-md-4 col-sm-12" style="padding-left:0;">
+                      <img id="myphoto" class="center-pic " data-delay='.8s' src="images/me.png" alt="myphoto" style=" opacity:0.5; width:100%;">
+                  </div>
+
+                </div>
+
+
+
             </div>
 
-          </div>
-
-
-      </div>
 
     </section>
 
@@ -142,9 +95,6 @@
 
       <div class="container">
         <div class="grid">
-
-
-
 
           <div class="row" style="margin-bottom: 60%; margin-left:auto; margin-right:auto;">
 
@@ -195,150 +145,79 @@
 
                         <div class= "col-lg-12 col-md-12 col-sm-12">
 
-                              <a id="tech3" href="tech3.html" class="projectblock">
-                                <img  width="100%;" src="images/tech3/banner.png" alt="banner" class="banner " data-delay="0s"
-                                onmouseover="this.src='images/tech3/banner2.svg'" onmouseout="this.src='images/tech3/banner.png'"/>
-                              </a>
-
-
-
-                      </div>
-            </div>
-
-            <div class="row" style="margin-bottom:60%;  margin-left:auto; margin-right:auto;">
-
-                          <div class= "col-lg-12 col-md-12 col-sm-12">
-
-                                <a id="tech4" href="" class="projectblock">
-                                  <img  width="100%;" src="images/tech4/banner.png" alt="banner" class="banner " data-delay="0s"
-                                  onmouseover="this.src='images/tech4/banner2.svg'" onmouseout="this.src='images/tech4/banner.png'"/>
-                                </a>
-
-
-
-                        </div>
-              </div>
-
-          <div class="row" style="margin-bottom: 60%;  margin-left:auto; margin-right:auto;">
-
-                        <div class= "col-lg-12 col-md-12 col-sm-12">
-                          <div class="projectblock">
-                            <a id="project10" href="project10.html" class="projectblock">
-                              <img  width="100%;" src="images/project10/banner.png" alt="banner" class="banner " data-delay="0s"
-                              onmouseover="this.src='images/project10/banner2.svg'" onmouseout="this.src='images/project10/banner.png'"/>
-                            </a>
-                        </div>
-                      </div>
-              </div>
-
-          <div class="row" style="margin-bottom: 60%;  margin-left:auto; margin-right:auto;">
-
-                      <div class= "col-lg-12 col-md-12 col-sm-12">
-                          <div class="projectblock">
-                            <a id="project1" href="project1.html" class="projectblock">
-                              <img  width="100%;" src="images/project1/banner.png" alt="banner" class="banner " data-delay="0s"
-                              onmouseover="this.src='images/project1/banner2.svg'" onmouseout="this.src='images/project1/banner.png'"/>
-                            </a>
-
-                        </div>
-                    </div>
-          </div>
-
-          <div class="row" style="margin-bottom: 60%;  margin-left:auto; margin-right:auto;">
-
-                        <div class= "col-lg-12 col-md-12 col-sm-12">
-                          <div class="projectblock">
-                            <a id="project9" href="project9.html" class="projectblock">
-                              <img  width="100%;" src="images/project9/banner.png" alt="banner" class="banner " data-delay="0s"
-                              onmouseover="this.src='images/project9/banner2.svg'" onmouseout="this.src='images/project9/banner.png'"/>
-                            </a>
-
-                        </div>
-                      </div>
-            </div>
-
-          <div class="row" style="margin-bottom: 60%;  margin-left:auto; margin-right:auto;">
-
-                      <div class= "col-lg-12 col-md-12 col-sm-12">
-                        <div class="projectblock">
-
-                          <a id="project2" href="project2.html" class="projectblock">
-                            <img  width="100%;" src="images/project2/banner.png" alt="banner" class="banner " data-delay="0s"
-                            onmouseover="this.src='images/project2/banner2.svg'" onmouseout="this.src='images/project2/banner.png'"/>
+                          <a id="tech3" href="tech3.html" class="projectblock">
+                            <img  width="100%;" src="images/tech3/banner.png" alt="banner" class="banner " data-delay="0s"
+                            onmouseover="this.src='images/tech3/banner2.svg'" onmouseout="this.src='images/tech3/banner.png'"/>
                           </a>
 
                       </div>
-                    </div>
-          </div>
-
-          <div class="row" style="margin-bottom: 60%;  margin-left:auto; margin-right:auto;">
-
-                        <div class= "col-lg-12 col-md-12 col-sm-12">
-                          <div class="projectblock">
-
-                            <a id="project4" href="project4.html" class="projectblock">
-                              <img  width="100%;" src="images/project4/banner.png" alt="banner" class="banner " data-delay="0s"
-                              onmouseover="this.src='images/project4/banner2.svg'" onmouseout="this.src='images/project4/banner.png'"/>
-                            </a>
-
-                          </div>
-                        </div>
             </div>
 
-          <div class="row" style="margin-bottom: 60%;  margin-left:auto; margin-right:auto;">
+          <div class="row" style="margin-bottom:60%;  margin-left:auto; margin-right:auto;">
 
-                      <div class= "col-lg-12 col-md-12 col-sm-12">
-                        <div class="projectblock">
+                  <div class= "col-lg-12 col-md-12 col-sm-12">
 
-                          <a id="project3" href="project3.html" class="projectblock">
-                            <img  width="100%;" src="images/project3/banner.png" alt="banner" class="banner " data-delay="0s"
-                            onmouseover="this.src='images/project3/banner2.svg'" onmouseout="this.src='images/project3/banner.png'"/>
-                          </a>
+                        <a id="tech4" href="" class="projectblock">
+                          <img  width="100%;" src="images/tech4/banner.png" alt="banner" class="banner " data-delay="0s"
+                          onmouseover="this.src='images/tech4/banner2.svg'" onmouseout="this.src='images/tech4/banner.png'"/>
+                        </a>
 
-                        </div>
-                      </div>
+                </div>
+
           </div>
 
+          <div class="row" style="margin-bottom:60%;  margin-left:auto; margin-right:auto;">
 
+                    <div class= "col-lg-12 col-md-12 col-sm-12">
 
-      </div>
+                        <a id="tech4" href="archprojects.html" class="projectblock">
+                          <img  width="100%;" src="images/arch.png" alt="banner" class="banner " data-delay="0s"
+                          onmouseover="this.src='images/arch.svg'" onmouseout="this.src='images/arch.png'"/>
+                        </a>
 
-    </div>
-
-
-      <footer class="container" style="margin-top:5%;">
-      <div class="grid">
-        <div class="row">
-          <div class="footer">
-
-                          <a class=""  data-delay='0s' href="https://www.linkedin.com/in/hesam-andalib-36ba3428/"><img id="linkedin" src="images/logo/in.png"></a>
-                          <a class=""  data-delay='0s' href="https://github.com/samandalib"><img id="linkedin" src="images/logo/gt.png"></a>
-
-
+                  </div>
           </div>
 
         </div>
-        <div class="row">
-          <div class="footer">
-            <div id='copyright'class=""  data-delay='0s'> ©Hesam Andalib 2020</div>
-          </div>
-        </div>
 
       </div>
-    </footer>
+
+    </section>
+
+    <section id="footer" style="background-color:#007bff;">
+      <p class="description2" style="color:white; padding-top:5%; padding-bottom:5%; font-size:12pt;">
+        <strong style="font-size:16pt;">That's it for <span style="color:black"> <strong>Now</strong></span></strong><br>
+        <br>
+         As a life-long student of design, I’m continuously improving my work. Please look forward to more updates.<br><br>
+         In the meantime, if you’re
+        looking for a designer to bounce ideas off or a foodie to explore new spicy cuisines or a good listener to talk to,
+        Get in touch!<br><br>
+        <span style="color:black; font-size:12pt; font-weight:500;">handalib@utexas.edu</span> <br><br>
+        <a href="https://www.linkedin.com/in/hesam-andalib-36ba3428/"><img id="linkedin" src="images/logo/in.svg"></ion-icon></a>
+        <a href="https://github.com/samandalib"><img id="git" src="images/logo/gt.svg"></a>
+
+
+      </p>
 
     </section>
 
 
 
 
+
+
+
 <!-- Custom JavaScript -->
     <script type="text/javascript">
+      document.getElementById('footer').setAttribute('style', 'display:none')
       document.getElementById('works').setAttribute('style', 'display:none')
       function showWorks(){
         document.getElementsByTagName("nav")[0].style.display = "block";
         let works = document.getElementById('works');
+        let footer =   document.getElementById('footer');
         works.setAttribute('style', 'display:block');
+        footer.setAttribute('style', 'display:block; background-color:#007bff;');
+
       }
 
       function backLight(){
@@ -353,5 +232,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
