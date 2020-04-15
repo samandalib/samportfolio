@@ -187,6 +187,38 @@
 
         </div>
 
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>5th Session</h3>
+            The new goal is to deploy what I created in the last sessions on one of the cloud platforms. The first choice was Heroku.com. So I started searching on the google for realizing how I can deploy a project on a cloud platform and the first question that I encountered
+            was:<br>
+            <strong>What is your applications stack?</strong><br>
+            I have no idea what it exactly means. So I started searching about application stack and the definition was:<br>
+            <strong>Application Stack</strong>: a bundle of software that runs everything from the frontend to the backend, from database to server administration to rendering the website. There are some common bundles. The most Famous being the LAMP stack in which <br>
+            L = Linux (as the administrative software)<br>
+            A = Apache (as the web server software)<br>
+            M = MySQL (as the database) <br>
+            P = PHP or Python (as the programming language)<br>
+                          <br>
+            After understanding the Stack concept. I was just curious what stack I have worked in so far and after a quick search on google I realized that it is called  MERN stack. It is a free and open-source JavaScript software stack for building dynamic websites and web applications.
+            To understand more about MERN stack and similar stacks in this category<a href="https://en.wikipedia.org/wiki/MEAN_(solution_stack)"> this Wikipedia page</a> helped me.
+            <br>
+            Now that I understood the Stack of my application. I followed the instruction in <a href="https://youtu.be/5PaUiPyBDJY">this Youtube video</a> to deploy my application on Heroku. However the work was not as smooth as I expected. Soon I ran into a problem and it was:<br>
+            After using the <code>npm run build</code> command at terminal, I expected to see a folder with name "build" at my "client" directory. But it did not happen.<br>
+            I searched for the problem on <a href="https://stackoverflow.com/">Stackoverflow</a> and found that the command <code>npm audit fix</code> might help to resolve the issue. The good news was that the build folder was now created in the Client directory but the bad news was that I was still
+            unable to deploy the application on Heroku. I followed all the steps in the video but the deployment failed each time I tried. First time the error title was " Browser list: caniuse-lite is outdated". I looked for a solution on Stackoverflow.com and found the command <code>npm i browserlist</code> and
+            <code>npm i coniuse-lite</code> and resolved this issue. But still deployment was not successfull. After searching in the google and Stackoverflow and reading the community questions. I found the issue. It was very interesting though:<br>
+            in the "package.json" file on the server side I had added the following command at "scripts" part : <br /><code>"heroku-postbuild":"cd client && npm install && npm run build" </code> <br>
+            But the problem was that as a habit of practice, I put a comma (,) at the end of the line (like what I do after the last element an array / object in JavaScript) and it was the cause of the problem. I removed it and YES! deployed on Heroku successfully.
+            <div id="api">
+            </div>
+            <br>
+
+
+
+          </div>
+
+        </div>
 
 
 
