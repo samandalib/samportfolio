@@ -189,7 +189,7 @@
 
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3>5th Session</h3>
+            <h3>5th and 6th Sessions</h3>
             The new goal is to deploy what I created in the last sessions on one of the cloud platforms. The first choice was Heroku.com. So I started searching on the google for realizing how I can deploy a project on a cloud platform and the first question that I encountered
             was:<br>
             <strong>What is your applications stack?</strong><br>
@@ -220,6 +220,59 @@
 
         </div>
 
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>7th and 8th Sessions</h3>
+            Though I deployed the application on Heroku and it is now available at <a href="https://totellapp.herokuapp.com/"> totellapp.herokuapp.com</a>, the application is not connected to the database and it makes it useless since there is no search functionality and you cannot Loging or sign up on it.
+            After doing some research and asking some friends, I realized that it is the problem that many users have with Heroku and it takes some time to resolve the issue. However, based on an expert's suggestion I decided to try Amazon Web Serivices first and deploy the application on it to see if I have <thead>
+              same problem there or not. Overally, I have to say that experiencing Heroku is far more diffrent that experiencing AWS. It takes too much effort to deploy something on AWS and the process is much more complex. However I decided to give it a try and see what will happen.<br>
+              To start my AWS experience, I looked for resorces on the internet and found an interesting and step-by-step guide for MERN stack deployment at <a href="https://jasonwatmore.com/"> Jason Watmore's Blog</a>. I followed the steps on his
+              <a href="https://www.youtube.com/watch?v=FanoTGjkxhQ">Youtube video with title "React + Node.js on AWS - How to Deploy a MERN Stack App to Amazon EC2"</a>.<br>
+            <strong>Step 1: Creating an AWS instance</strong><br>
+            This step consisted of some tasks as follow:<br>
+            1. Creating a new <i>Ubuntu</i> instance server on AWS <i>EC2</i><br>
+            after loging to aws and login to <i>AWS Management Console</i>, from section <i>All Services</i> under the <i>Compute</i> cluster, select <i>EC2</i><br>
+            2. Click on <i>Launch Instance</i> button <br>
+            3. Choose AMI (Amazon Machine Image) and search for <i>Ubuntu</i> servers and select the first option <br>
+            4. Select the instance Type (in this case "Free-tier") <br>
+            5. from top menu, got to <i>6.Configure Security Groupe</i> and create a keypair in order to be able to connect to AWS through SSH and download it <br>
+            6. Click on "Launch" <br>
+            No the instance is created. By clicking on <i>View Instance</i> I can go to dashboard, where all instances will be visible with detail information.<br>
+            <br>
+            <strong>Step 2: Connecting to Ubuntu EC2 instance via SSH</strong><br>
+            This process was a little complex since I was working on a Windows platform and wanted to connect my Command prompt to a Linux terminal in order to push some commands on the server. The
+            tutorial that I was following suggested using the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html">AWS documentation for Connecting to Linux Instance from Windows Using PuTTY</a> to be able to do the connection possible.<br>
+            <br>
+            <strong>Step 3: Connecting to Linux instance</strong><br>
+            I followed the steps on the AWS documentation and connected the Windows Command Prompt to the Linux Terminal on the server and it was successfully connected <br>
+            <br>
+            <strong>Step 4: Transferring files to the Linux instance</strong><br>
+            After the connection to the Linux instance command line the files can be transferred to the server with a single command. For example if you want to transfer a file with name "sample_file.txt" from the "C:\" rout on the windows to the "EC2-user" home directory on
+            the Amazon Linux instance, the command line will be:<br>
+            <code>pscp -i c:\path\my-key-pair.ppk c:\path\sample_file.txt ec2-user @ public_dns:/home/ec2-user/sample_file.txt</code><br>
+            <br>
+            <strong>Step 5: Deployment</strong><br>
+            After creting an instance on AWS, for MERN stack, I have to setup web server with Node.js + MongoDB + NGINIX.<br>
+            It can be implemented using ready codes provided by other community of practice members. I used the command provided by Jason Watmore that I mentione before.<br>
+
+            <code>
+              curl https://gist.githubusercontent.com/cornflourblue/f0abd30f47d96d6ff127fe8a9e5bbd9f/raw/e3047c9dc3ce8b796e7354c92d2c47ce61981d2f/setup-nodejs-mongodb-production-server-on-ubuntu-1804.sh | sudo bash</code>
+              <br>
+          After setting up the web server, I  followed the steps to transfer my project from my Github repository to the server using the <code>sudo git clone https://gothub.com/projectRepositoryAddress</code><br>
+          I followed all the steps in the instructions I found but I couldn't get any result from the AWS instance I made. Actually the first page that I got from Heroku, I could not get from AWS. So my guess is that there might be something wrong with
+          any part of my Stack. So the next plan is to go and review the whole MERN stack that I used for this project.
+
+
+
+
+            </thead>
+            <br>
+
+
+
+          </div>
+
+        </div>
 
 
 
@@ -331,4 +384,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
   </body>
+
 </html>
