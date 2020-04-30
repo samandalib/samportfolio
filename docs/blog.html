@@ -261,9 +261,91 @@
           After setting up the web server, I  followed the steps to transfer my project from my Github repository to the server using the <code>sudo git clone https://gothub.com/projectRepositoryAddress</code><br>
           I followed all the steps in the instructions I found but I couldn't get any result from the AWS instance I made. Actually the first page that I got from Heroku, I could not get from AWS. So my guess is that there might be something wrong with
           any part of my Stack. So the next plan is to go and review the whole MERN stack that I used for this project.
+          <br>
 
 
 
+            </thead>
+            <br>
+
+
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>9th and 10th Sessions</h3>
+            <h4>Node.js</h4>
+            I started Learning the MERN stack from the Node.js part. I found an interesting course on <a href="https://www.edx.org">edx.org</a> with title "Introduction to Node.js". It started with basics of installing and setting a Node.js environment. The main takeaways of this course for me were as follows:<br>
+            <ul>
+              <li>Node is an interpreted language not a compiled one: that it is not as fast as comiled languages like C#, C++, etc. but it provides the opportunity to make changes in the code and see the results instantly</li>
+              <li>There are three main ways to launch a Node code: REPL, Eval Option, and Launching code from a file</li>
+              <li>Node.js and browser JavaScript differ when it comes to globals. Developers should be familiar with these keywords: Process, Global, module.exports and exports</li>
+
+            </ul>
+            During this course I learned about the following topics:<br>
+            <ul>
+              <li>Node.js Globals</li>
+              <li>Node.js Process</li>
+              <li>Command-line Arguments</li>
+              <li>"require" and "Module.exports"</li>
+              <li>Core Modules like "fs", "path", "http"</li>
+              <li>Event emmiters</li>
+            </ul>
+            <br>
+            Learning Node.js requires getting familiar with "npm" (Node package Manager) as well. Npm consists of three components:<br>
+            <ul>
+              <li>Website: www.npmjs.com</li>
+              <li>command-line tool: npm</li>
+              <li>Registries: public and private</li>
+            </ul><br>
+            We need either the <code>package.json</code> file or "node_modules" folder to install modules locally. The best thing about npm is that it keeps all the dependencies local.<br>
+            To install a  module locally we use either <code>npm install module-name</code> or <code>npm i module-name</code><br>
+            To install a module globally, we use either <code>npm install --global module-name</code> or <code>npm i -g module-name</code><br>
+            To remove an npm module locally, use <code>npm rm module-name</code><br>
+            To remove a global moduel, use <code>npm rm module-name -g</code><br>
+            <br>
+            <h4>Express.js</h4>
+            Express.js is a web framework based on the core Node.js "http" module and connect components. The components are called "middleware" and they are the cornerstones of the framework philosophy "configuration over convention". i.e. Express systems are highly configurable, which allows developers to freely pick whatever
+            libraries they need for a particular project. Some of the benefits of express include:
+            <ul>
+              <li>Deliver static content</li>
+              <li>Modularize business logic</li>
+              <li>construct an API</li>
+              <li>Connect to various data source (with additional plugins)</li>
+              <li>Write less code (vs. http)</li>
+              <li>Validate data (with additional plugins)</li>
+            </ul>
+            The main Express app file is typically named app.js, server.js or index.js. It has the following sections:
+            <ol>
+              <li>Imports</li>
+              <li>Instantiations</li>
+              <li>Configurations</li>
+              <li>Middleware</li>
+              <li>Routes</li>
+              <li>Error handlers</li>
+              <li>Server Bootup or server export</li>
+            </ol>
+            I covered some topic related to each section and started learning MongoDB.<br>
+            <br>
+            <h4>MongoDB</h4>
+            MongoDB is a NoSQL database. A good reason to use NoSQL databases is that, because they are schema-less, they are perfect for prototyping and for agile iterations. It is also a document store NoSQL databese (as opposed to key-value and wide-column NoSQL databases). It is the most mature and dependable NoSQL
+            database available thus far. <br>
+            MongoDB uses JavaScript. So all JavaScript and Node commands, classes and methods are a fair game in the Mongo console. In this section of learning, I learned the following skills:<br>
+            <ul>
+              <li>connecting to MongoDB</li>
+              <li>Updating documents</li>
+              <li>Removing Documents</li>
+              <li>Finding Documents</li>
+              <li>Coding CRUD (Create, Read, Update, Delete) REST API with Node, Express and MongoDB</li>
+              <li>Mongoose library: a fully developed object-document mapping (ODM) library for Node.js and MongoDB</li>
+            </ul>
+            <br>
+            <h5>Key Takeaway</h5>
+            After covering these topics, I realized that there are a lot of mistakes at how I organized my files and modules in my projects. I was tempted to go and restructure the whole project that I have made in the previous sessions and align it with the best practices that I have learned in these modules.
+            Learning new things is great, but I think reviewing what you already learned before helps to both stabilize your knowledge and skills and help you understand where you have mistakes and misunderstandings.
 
             </thead>
             <br>
